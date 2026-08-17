@@ -1,0 +1,135 @@
+[
+  {
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "cdn.pie-staging.org"
+    },
+    "id": 20001,
+    "priority": 100
+  },
+  {
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "pie.org"
+    },
+    "id": 20002,
+    "priority": 100
+  },
+  {
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "cdn.pie.org"
+    },
+    "id": 20003,
+    "priority": 100
+  },
+  {
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "initiatorDomains": [
+        "pie.org",
+        "pie-staging.org"
+      ]
+    },
+    "id": 20004,
+    "priority": 1000
+  },
+  {
+    "action": {
+      "type": "allowAllRequests"
+    },
+    "condition": {
+      "initiatorDomains": [
+        "pie.org",
+        "pie-staging.org"
+      ],
+      "urlFilter": "*",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    },
+    "id": 20005,
+    "priority": 1000
+  },
+  {
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "X-Frame-Options",
+          "operation": "remove"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "operation": "remove"
+        }
+      ]
+    },
+    "condition": {
+      "initiatorDomains": [
+        "pie.org",
+        "pie-staging.org"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    },
+    "id": 20006,
+    "priority": 10000
+  },
+  {
+    "id": 20007,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||pixel.adsafeprotected.com^"
+    }
+  },
+  {
+    "id": 20008,
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "X-Frame-Options",
+          "operation": "remove"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "operation": "remove"
+        }
+      ]
+    },
+    "condition": {
+      "initiatorDomains": [
+        "jpkfgepcmmchgfbjblnodjhldacghenp"
+      ],
+      "resourceTypes": [
+        "sub_frame"
+      ]
+    },
+    "priority": 20001
+  },
+  {
+    "id": 20009,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "initiatorDomains": [
+        "jpkfgepcmmchgfbjblnodjhldacghenp"
+      ]
+    },
+    "priority": 10000
+  }
+]

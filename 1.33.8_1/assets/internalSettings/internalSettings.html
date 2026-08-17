@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .entry-container {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .hostname-input, .input-container input, .input-container select {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .hostname-input {
+      width: 300px;
+    }
+    .input-container {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+    .input-label {
+      margin-right: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+    .remove-button, .add-button, .save-button {
+      background-color: #233ed4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .remove-button:hover, .add-button:hover, .save-button:hover {
+      background-color: #22c7dd;
+    }
+    .collapsible {
+      background-color: #f1f1f1;
+      color: #444;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .active, .collapsible:hover {
+      background-color: #ccc;
+    }
+    .content {
+      padding: 0 18px;
+      overflow: hidden;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+    .message {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+    .debugSettingsContent {
+      border: 1px black solid;
+      padding: 20px;
+    }
+    .featureFlagsContent {
+      border: 1px black solid;
+      padding: 20px;
+    }
+    #configManagerContent {
+      border: 1px black solid;
+      padding: 20px;
+    }
+    #configManagerJson {
+      width: 100%;
+      height: 500px;
+    }
+    .sticky-footer {
+      position: sticky;
+      bottom: 0;
+      background-color: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-evenly;
+    }
+    #resetToDefaultButton {
+      background-color: #f44336;
+    }
+    #saveButton {
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Pie Internal Settings</h1>
+    <div>You've found Pie's internal testing settings! Here you can toggle experimental Pie features and configurations</div>
+    <div class="featureFlagsContent">
+      <h2>Feature Flags</h2>
+      <!-- <button class="collapsible">Toggle Feature Flags</button> -->
+      <div id="settingsContainer" class="content">
+      </div>
+    </div>
+    <div class="debugSettingsContent">
+      <h2>Debug Settings</h2>
+      <div class="input-container">
+        <label class="input-label" for="enableCpmViewer">Enable CPM viewer</label>
+        <input type="checkbox" id="enableCpmViewer">
+      </div>
+    </div>
+    <div id="configManagerContent">
+      <h1>Edit Pie Offers Config JSON</h1>
+      <textarea id="configManagerJson" placeholder="Config JSON"></textarea>
+    </div>
+    <div class="sticky-footer">
+      <button id="saveButton" class="save-button">Save</button>
+      <button id="resetToDefaultButton" class="save-button">Reset to defaults</button>
+    </div>
+  </div>
+  <script src="../../internalSettings.js"></script>
+</body>
+</html>

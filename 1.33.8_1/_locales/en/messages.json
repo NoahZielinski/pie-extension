@@ -1,0 +1,1758 @@
+{
+   "1_Star": {
+      "description": "One Star Rating",
+      "message": "1 Star"
+   },
+   "1_coupon_found_E": {
+      "description": "When we have a coupon code",
+      "message": "1 coupon found!"
+   },
+   "1_coupon_found_for_MERCHANT": {
+      "description": "When we have a coupon code",
+      "message": "1 coupon found for {MERCHANT}!"
+   },
+   "1_coupon_remaining": {
+      "description": "When we're working on applying the final coupon",
+      "message": "1 coupon remaining"
+   },
+   "ACTIVATETEXT_at_MERCHANT": {
+      "description": "Prompt to activate rewards",
+      "message": "{ACTIVATETEXT} at {MERCHANT}?"
+   },
+   "ADBLOCKER_EXTENSION_DESCRIPTION": {
+      "description": "The description of the adblocker extension in the chrome web store",
+      "message": "Pie Adblock blocks ads & pop-ups, plus YouTube & Twitch video ads. You can customize your ad experience with Pie!"
+   },
+   "ADBLOCKER_EXTENSION_NAME": {
+      "description": "The name of the adblocker extension in the chrome web store",
+      "message": "Pie Adblock - A Powerful Free Ad Blocker"
+   },
+   "ADDURATION_Saved": {
+      "message": "{ADDURATION} saved"
+   },
+   "Activate": {
+      "message": "Activate"
+   },
+   "Activate_Cash_Back": {
+      "description": "Prompt to activate cash back rewards",
+      "message": "Activate Cash Back"
+   },
+   "Activate_Cash_Back_and_keep_track_of_your_future_earnings_with_a_free_Pie_ACCOUNT": {
+      "description": "Description for logged out cash back prompt",
+      "message": "Activate Cash Back and keep track of your future earnings with a free Pie {ACCOUNT}."
+   },
+   "Activate_REWARDSFIXED_Points_Back": {
+      "description": "Propmt to activate a fixed rate back in rewards points (e.g. 300 points)",
+      "message": "Activate {REWARDSFIXED} Points Back"
+   },
+   "Activate_REWARDSPERCENT_Cash_Back": {
+      "description": "Prompt to activate a percentage back in cash back rewards",
+      "message": "Activate {REWARDSPERCENT} Cash Back"
+   },
+   "Activate_Up_To_REWARDSFIXED_Points_Back": {
+      "description": "Prompt to activate activate a fixed rate back in rewards points (e.g. up to 300 points back)",
+      "message": "Activate up to {REWARDSFIXED} Points Back"
+   },
+   "Activate_Up_To_REWARDSPERCENT_Cash_Back": {
+      "description": "Prompt to activate a percentage based reward back in cash",
+      "message": "Activate Up To {REWARDSPERCENT} Cash Back"
+   },
+   "Activate_this_offer_from_our_partner_and_you_could_earn_REWARDSVALUE_with_an_eligible_purchase": {
+      "description": "Prompt to activate a product reward, purchase required",
+      "message": "Activate this offer from our partner and you could earn {REWARDSVALUE} with an eligible purchase!"
+   },
+   "Activate_to_earn": {
+      "description": "Prompt to activate a percentage based reward back in cash",
+      "message": "Activate to earn"
+   },
+   "Activate_to_earn_REWARDSFIXED_Points_Back": {
+      "description": "Prompt to activate a fixed rate back in rewards points (e.g. 300 points)",
+      "message": "Activate to earn {REWARDSFIXED} Points Back"
+   },
+   "Activate_to_earn_REWARDSPERCENT_Cash_Back": {
+      "description": "Prompt to activate a percentage based reward back in cash",
+      "message": "Activate to earn {REWARDSPERCENT} Cash Back"
+   },
+   "Activate_to_earn_REWARDSVALUE_on_this_product": {
+      "description": "Prompt to activate a product reward",
+      "message": "Activate to earn {REWARDSVALUE} on this product!"
+   },
+   "Activate_to_earn_REWARDSVALUE_on_this_product_amazon": {
+      "description": "Prompt to activate a product reward on amazon",
+      "message": "Activate this offer to earn {REWARDSVALUE} via our partnership with this manufacturer!"
+   },
+   "Activate_up_to": {
+      "description": "Prompt to activate a percentage based reward back in cash",
+      "message": "Activate up to"
+   },
+   "Activate_up_to_REWARDSFIXED_Points_Back": {
+      "description": "Prompt to activate a fixed rate back in rewards points (e.g. up to 300 points back)",
+      "message": "Activate up to {REWARDSFIXED} Points Back"
+   },
+   "Activated": {
+      "message": "Activated"
+   },
+   "Active": {
+      "description": "Indicates that something is currently active",
+      "message": "Active"
+   },
+   "Ad": {
+      "description": "Label for an ad",
+      "message": "Ad"
+   },
+   "Ad_detected": {
+      "message": "Ad detected"
+   },
+   "Adblock_Visual_Mode": {
+      "description": "Option to enable visual mode",
+      "message": "Adblock Visual Mode"
+   },
+   "Adblock_is_STATUS_on_this_site": {
+      "description": "Adblock is enabled or disabled on this site",
+      "message": "Adblock is {STATUS} on this site"
+   },
+   "Adblock_is_disabled": {
+      "description": "Adblock is globally disabled alert",
+      "message": "Adblock is disabled"
+   },
+   "Adblock_is_disabled_on_this_site": {
+      "description": "Header showing state of adblock (when disabled)",
+      "message": "Adblock is disabled on this site"
+   },
+   "Adblock_is_enabled": {
+      "description": "Adblock is globally enabled alert",
+      "message": "Adblock is enabled"
+   },
+   "Adblock_is_enabled_on_this_site": {
+      "description": "Header showing state of adblock (when enabled)",
+      "message": "Adblock is enabled on this site"
+   },
+   "Adblock_visual_mode_description": {
+      "description": "Description for adblock visual mode",
+      "message": "Enable visual mode to see what Pie is blocking on each site"
+   },
+   "Adblocker_isnt_fully_set_up": {
+      "description": "Prompt to get user permission",
+      "message": "Adblocker isn't fully set up"
+   },
+   "Adblocker_mode": {
+      "description": "Detect ads popup settings",
+      "message": "Adblocker mode"
+   },
+   "Add_Pie_Shopping_to_earn": {
+      "description": "Subtitle for shopping extension cross sell popup",
+      "message": "Add Pie Shopping to earn"
+   },
+   "Add_our_shopping_extension_to_get_50_points_instantly_and_start_earning_cash_back": {
+      "description": "Extension cross sell subtitle",
+      "message": "Add our shopping extension to get 50 points instantly and start earning cash back."
+   },
+   "Add_to_Chrome": {
+      "description": "Shopping Extension cross sell popup cta",
+      "message": "Add to Chrome"
+   },
+   "Ads_blocked": {
+      "description": "Displayed adjacent to number of ads blocked",
+      "message": "Ads blocked"
+   },
+   "Allow_ads_on_all_channels_you_follow_on_PLATFORM": {
+      "description": "Option to allow ads on all channels you 'follow' on",
+      "message": "Allow ads on all channels you follow on {PLATFORM}"
+   },
+   "Allow_ads_on_all_channels_you_subscribe_to_on_PLATFORM": {
+      "description": "Option to allow ads on all channels you 'subscribe' to",
+      "message": "Allow ads on all channels you subscribe to on {PLATFORM}"
+   },
+   "Allow_ads_on_this_channel": {
+      "description": "Option to allow ads on this creator's channel",
+      "message": "Allow ads on this channel"
+   },
+   "Allow_ads_on_this_site": {
+      "description": "Option to allow ads on this website",
+      "message": "Allow ads on this site"
+   },
+   "Allowing_ads_on_this_site": {
+      "description": "Title when allowing ads on this website",
+      "message": "Allowing ads on this site"
+   },
+   "Already_Registered_Log_In": {
+      "description": "Prompt to log in",
+      "message": "Already Registered? Log In"
+   },
+   "Always_allow": {
+      "description": "Always Allow extension permission",
+      "message": "Always Allow"
+   },
+   "Always_allow_on_every_website": {
+      "description": "Always Allow on Every Website extension permission",
+      "message": "Always Allow on Every Website"
+   },
+   "Amazon_doesnt_have_storewide_coupons_If_a_product_has_a_working_coupon_available_well_apply_it_for_you_automatically_at_checkout": {
+      "description": "Instructions for auto-coupons on Amazon",
+      "message": "Amazon doesn't have storewide coupons. If a product has a working coupon available, we'll apply it for you automatically at checkout."
+   },
+   "An_unknown_error_occurred": {
+      "description": "Error message for unknown errors",
+      "message": "An unknown error occurred."
+   },
+   "Apply_Coupons": {
+      "description": "Prompt to auto-apply coupons",
+      "message": "Apply Coupons"
+   },
+   "Applying_Coupons": {
+      "description": "Text displayed as we're auto-applying coupons",
+      "message": "Applying Coupons"
+   },
+   "Applying_coupon": {
+      "description": "Text displayed as we're auto-applying a coupon",
+      "message": "Applying coupon"
+   },
+   "Are_you_sure": {
+      "description": "Prompt before user taking a dangerous action",
+      "message": "Are you sure?"
+   },
+   "Are_you_sure_you_want_to_stop_applying_coupons": {
+      "description": "Prompt we show when user closes auto-coupon screen",
+      "message": "Are you sure you want to stop applying coupons?"
+   },
+   "Auto_disable_other_ad_blockers": {
+      "description": "Option to auto-disable other ad blockers",
+      "message": "Auto-disable other ad blockers"
+   },
+   "Automatic_Coupons_on_Amazon": {
+      "description": "The automatic coupon feature on Amazon",
+      "message": "Automatic Coupons on Amazon"
+   },
+   "Automatic_savings_found": {
+      "description": "Popup title when we have savings for a store",
+      "message": "Automatic Savings Found"
+   },
+   "Automatically_apply_all_coupons_instantly": {
+      "description": "Explanation of auto-coupons",
+      "message": "Automatically apply all coupons instantly."
+   },
+   "Available_Coupons": {
+      "description": "Title for the available coupons section",
+      "message": "Available Coupons"
+   },
+   "Aww_shucks": {
+      "description": "Cute title when something goes wrong",
+      "message": "Aww, shucks."
+   },
+   "Basic_Features": {
+      "description": "Title for the basic features section",
+      "message": "Basic Features"
+   },
+   "Block_Ads": {
+      "description": "Option to block ads",
+      "message": "Block Ads"
+   },
+   "Block_Cookie_Consent_Popups": {
+      "description": "Option to block cookie consent popups",
+      "message": "Block Cookie Consent Pop-ups"
+   },
+   "Block_Trackers": {
+      "description": "Option to block trackers",
+      "message": "Block Trackers"
+   },
+   "Block_YouTube_Ads": {
+      "description": "Option to block YouTube ads",
+      "message": "Block YouTube Ads"
+   },
+   "Block_ads_on_most_websites": {
+      "description": "Option to block ads on most websites",
+      "message": "Block ads on most websites"
+   },
+   "Block_all_trackers_rewards": {
+      "description": "Option to block all trackers and rewards",
+      "message": "Block all trackers/rewards"
+   },
+   "Block_those_annoying_cookie_consent_banners": {
+      "description": "Option to block cookie consent popups",
+      "message": "Block those annoying cookie consent banners on most websites"
+   },
+   "Blocking_ads": {
+      "description": "Displayed when actively blocking ads",
+      "message": "Blocking ads"
+   },
+   "Boom_Youre_saving_AMOUNT": {
+      "description": "Message when we save the user money",
+      "message": "Boom! You're saving {AMOUNT}"
+   },
+   "Both_extensions_installed": {
+      "description": "Message when both adblock and shopping extensions are installed",
+      "message": "Both extensions installed!"
+   },
+   "Bummer_it_didnt_work": {
+      "description": "Message when something goes wrong",
+      "message": "Bummer, it didn't work."
+   },
+   "Cash_Back": {
+      "description": "Label for cash back rewards",
+      "message": "Cash Back"
+   },
+   "Cash_Back_Available": {
+      "description": "Shopping extension cross sell popup title",
+      "message": "Cash Back Available"
+   },
+   "Cash_Back_is_unavailable_on_this_store_for_this_shopping_session_because_there_is_a_previous_referral_from_another_website": {
+      "description": "Standdown messaging in popover",
+      "message": "Cash back is unavailable on this store for this shopping session because there is a previous referral from another website."
+   },
+   "Cash_Back_requires_purchase": {
+      "description": "Shopping extension cash back popup disclaimer",
+      "message": "Cash Back requires purchase"
+   },
+   "Change_settings": {
+      "description": "Prompt to change settings",
+      "message": "Change settings"
+   },
+   "Changes_will_only_affect_SITEDOMAIN": {
+      "message": "Changes will only affect {SITEDOMAIN}"
+   },
+   "Choose_how_you_would_like_to_proceed": {
+      "description": "subtitle to choose how to proceed",
+      "message": "Choose how you would like to proceed:"
+   },
+   "Claim_Instant_Rewards": {
+      "description": "Rewards transaction popup cta",
+      "message": "Claim Instant Rewards"
+   },
+   "Claim_this_offer_to_earn_and_unlock_more_ways_to_earn": {
+      "description": "Intro offer popup subtitle",
+      "message": "Claim this offer to earn {POINTS} and unlock more ways to earn."
+   },
+   "Claim_your_first_points_on_us": {
+      "description": "Intro offer title",
+      "message": "Claim Your First {POINTS} Points ({VALUE}) On Us!"
+   },
+   "Claim_your_points_and_keep_track_of_your_future_earnings": {
+      "description": "Subtitle for logged out instant rewards prompt",
+      "message": "Claim your points and keep track of your future earnings with a free Pie {ACCOUNT}."
+   },
+   "Classic": {
+      "description": "Option to enable classic mode",
+      "message": "Classic"
+   },
+   "Classic_Mode": {
+      "description": "Option to enable classic mode",
+      "message": "Classic Mode"
+   },
+   "Clean_Mode": {
+      "description": "Option to enable adblock clean mode",
+      "message": "Clean Mode"
+   },
+   "Click_Always_Allow": {
+      "description": "Onboarding instruction for PieGPT",
+      "message": "Click 'Always Allow'"
+   },
+   "Contact_support_for_assistant_and_give_them_this_reference_number": {
+      "description": "Error help message",
+      "message": "Contact {EMAIL} for assistance and give them this reference number"
+   },
+   "Continue_to_Checkout": {
+      "description": "Button to close popup and continue to checkout",
+      "message": "Continue to Checkout"
+   },
+   "Continue_with_selection": {
+      "description": "Button to continue with selection",
+      "message": "Continue with selection"
+   },
+   "Copied": {
+      "description": "When text is copied to clipboard",
+      "message": "Copied!"
+   },
+   "Copy": {
+      "description": "Prompt to copy text",
+      "message": "Copy"
+   },
+   "Coupon_Detected": {
+      "description": "When we detect a coupon on a store product page",
+      "message": "Coupon Detected"
+   },
+   "Coupons_Found": {
+      "description": "When we have coupons for a store",
+      "message": "Coupons Found"
+   },
+   "Coupons_took_too_long": {
+      "description": "Feedback for when coupons didn't finish applying or took too long",
+      "message": "Coupons didn't finish applying or took too long"
+   },
+   "Create_a_free_Pie_account": {
+      "description": "Prompt to create an account",
+      "message": "Create a free Pie account"
+   },
+   "Create_a_free_account_to_earn_rewards_for_the_ads_you_choose_to_see": {
+      "description": "Popover tooltip when a user is not earning rewards via Fair Ads on this site (not logged in)",
+      "message": "Create a free account to earn rewards for the ads you choose to see. Rewards earned from viewing Fair Ads are accrued automatically and distributed at the end of each month."
+   },
+   "Create_account": {
+      "description": "Prompt to create an account",
+      "message": "Create account"
+   },
+   "Create_an_account": {
+      "description": "Prompt to create an account",
+      "message": "Create an account"
+   },
+   "Data_about_this_website_will_be_sent_to_Pie": {
+      "description": "Warning before submitting feedback form",
+      "message": "Data about this website will be sent to Pie"
+   },
+   "Delete_Account": {
+      "description": "Prompt to delete user account",
+      "message": "Delete Account"
+   },
+   "Did_Pie_Break_This_Website": {
+      "message": "Did Pie Break This Website?"
+   },
+   "Did_Something_Go_Wrong": {
+      "message": "Did something go wrong on {STORENAME}?"
+   },
+   "Did_you_know": {
+      "description": "Heading for informational section",
+      "message": "Did you know?"
+   },
+   "Disable": {
+      "description": "Button label for disabling a feature",
+      "message": "Disable"
+   },
+   "Disable_Other_Adblockers": {
+      "description": "Prompt to disable other adblockers",
+      "message": "Disable Other Adblockers"
+   },
+   "Disable_Permanently": {
+      "description": "Prompt to permanently disable the extension",
+      "message": "Disable Permanently"
+   },
+   "Disable_PieGPT": {
+      "description": "Button label for permanently disabling the PieGPT feature",
+      "message": "Disable PieGPT"
+   },
+   "Disable_PieGPT_for_this_session": {
+      "description": "Button label for temporarily disabling the PieGPT feature",
+      "message": "Disable PieGPT for this session"
+   },
+   "Disable_for_this_session": {
+      "description": "Button label for temporarily disabling a feature",
+      "message": "Disable for this session"
+   },
+   "Dismiss": {
+      "description": "Prompt to stop showing a component",
+      "message": "Dismiss"
+   },
+   "Dont_miss_your_chance_to_save": {
+      "description": "Propmt to get the user to click savings CTA",
+      "message": "Don't miss your chance to save."
+   },
+   "Dont_share": {
+      "description": "Option not to share information",
+      "message": "Don't share"
+   },
+   "Dont_show_this_again": {
+      "description": "Option to permanently dismiss a message",
+      "message": "Don’t show this again"
+   },
+   "Dont_worry_its_free": {
+      "description": "Prompt to let the user know it's free",
+      "message": "Don't worry, it's free!"
+   },
+   "EMAIL_joined_Pie": {
+      "description": "User joined Pie",
+      "message": "{EMAIL} joined Pie."
+   },
+   "EXTENSION_DESCRIPTION": {
+      "description": "The description of the unified extension in the chrome web store",
+      "message": "Customize your ad experience to ensure you maximize rewards and savings while minimizing unwanted distractions."
+   },
+   "EXTENSION_NAME": {
+      "description": "The name of the unified extension in the chrome web store",
+      "message": "Pie: Adblock & Rewards"
+   },
+   "Earn": {
+      "description": "Prompt to earn rewards",
+      "message": "Earn"
+   },
+   "Earn_Cashback": {
+      "description": "Prompt to earn rewards",
+      "message": "Earn Cash Back on this purchase!"
+   },
+   "Earn_REWARDSFIXED_Points_Back": {
+      "description": "Prompt to activate a fixed rate back in rewards points (e.g. 300 points)",
+      "message": "Earn {REWARDSFIXED} Points Back"
+   },
+   "Earn_REWARDSFIXED_Points_Back_E": {
+      "description": "Prompt to activate a fixed rate back in rewards points (e.g. 300 points)",
+      "message": "Earn {REWARDSFIXED} Points Back!"
+   },
+   "Earn_REWARDSPERCENTCASHBACK": {
+      "description": "Prompt to activate a percentage based reward back in cash",
+      "message": "Earn {REWARDSPERCENTCASHBACK}"
+   },
+   "Earn_REWARDSPERCENT_Cash_Back": {
+      "description": "Prompt to activate a percentage based reward back in cash",
+      "message": "Earn {REWARDSPERCENT} Cash Back"
+   },
+   "Earn_REWARDSPERCENT_Cash_Back_E": {
+      "description": "Prompt to activate a percentage based reward back in cash",
+      "message": "Earn {REWARDSPERCENT} Cash Back!"
+   },
+   "Earn_Up_To_REWARDSFIXED_Points_Back": {
+      "description": "Prompt to activate a fixed rate back in rewards points (e.g. up to 300 points back)",
+      "message": "Earn up to {REWARDSFIXED} Points Back"
+   },
+   "Earn_Up_To_REWARDSFIXED_Points_Back_E": {
+      "description": "Prompt to activate a fixed rate back in rewards points (e.g. up to 300 points back)",
+      "message": "Earn up to {REWARDSFIXED} Points Back!"
+   },
+   "Earn_Up_To_REWARDSPERCENTCASHBACK": {
+      "description": "Prompt to activate a percentage based reward back in cash",
+      "message": "Earn up to {REWARDSPERCENTCASHBACK}"
+   },
+   "Earn_Up_To_REWARDSPERCENT_Cash_Back": {
+      "description": "Prompt to activate a percentage based reward back in cash",
+      "message": "Earn up to {REWARDSPERCENT} Cash Back"
+   },
+   "Earn_Up_To_REWARDSPERCENT_Cash_Back_E": {
+      "description": "Prompt to activate a percentage based reward back in cash",
+      "message": "Earn up to {REWARDSPERCENT} Cash Back!"
+   },
+   "Earn_Up_To_REWARDSVALUE": {
+      "description": "Prompt to activate a percentage based reward back in cash",
+      "message": "Earn up to {REWARDSVALUE}"
+   },
+   "Earn_rewards_for_every_ad_you_block": {
+      "description": "Money Mode subtitle",
+      "message": "Earn rewards for every ad you block"
+   },
+   "Earn_rewards_for_seeing_these_ads": {
+      "description": "Fair Ads notification when logged out",
+      "message": "Earn rewards for seeing these ads"
+   },
+   "Earn_rewards_for_using_ChatGPT_when_you_shop_by_receiving_cash_back_on_1000s_of_stores_unique_deals_on_products_and_custom_recommendations_from_our_partners": {
+      "description": "Tooltip to explain PieGPT rewards",
+      "message": "Earn rewards for using ChatGPT when you shop by receiving cash back on 1000s of stores, unique deals on products, and custom recommendations from our partners."
+   },
+   "Earn_rewards_just_for_clicking_to_take_a_look_around_the_store": {
+      "description": "Retargeting subtitle",
+      "message": "Earn rewards just for clicking to take a look around the store."
+   },
+   "Earn_rewards_while_using_AI": {
+      "description": "PieGPT intro heading",
+      "message": "Earn rewards while using AI!"
+   },
+   "Earn_rewards_with_Pie": {
+      "description": "Heading for rewards setting toggle",
+      "message": "Earn rewards with Pie"
+   },
+   "Earn_rewards_with_Pie_Shopping": {
+      "description": "Shopping XSell Popup",
+      "message": "Earn rewards with Pie Shopping"
+   },
+   "Earned": {
+      "description": "Rewards earned",
+      "message": "Earned"
+   },
+   "Earned_with_Money_Mode": {
+      "description": "Rewards earned with Money Mode",
+      "message": "Earned with Money Mode"
+   },
+   "Earning": {
+      "description": "Indicator user is earning points",
+      "message": "Earning"
+   },
+   "Earning_rewards_for_using_AI_with_PieGPT": {
+      "description": "Shows when user is earning rewards via PieGPT",
+      "message": "Earning rewards for using AI with PieGPT"
+   },
+   "Enable_Adblock": {
+      "description": "Enable adblock",
+      "message": "Enable Adblock"
+   },
+   "Enhanced_pop_up_blocking": {
+      "description": "Option to block pop-ups",
+      "message": "Enhanced Pop-up Blocking"
+   },
+   "Enjoy_your_new_clean_internet": {
+      "description": "Title for adblock visual mode popup",
+      "message": "Enjoy your new clean internet"
+   },
+   "Enjoying_Pie_Leave_us_a_rating": {
+      "description": "Prompt to get the user to rate the extension",
+      "message": "Enjoying Pie? Leave us a rating:"
+   },
+   "Enter_your_feedback": {
+      "description": "Placeholder text for feedback form",
+      "message": "Enter your feedback..."
+   },
+   "Estimated_Cart_Total": {
+      "description": "Estimated total of the cart",
+      "message": "Estimated Cart Total"
+   },
+   "Everything_is_better_with_Pie_Join_today_to_start_earning": {
+      "description": "Onboarding prompt to join Pie",
+      "message": "Everything is better with Pie. Join today to start earning."
+   },
+   "Exclusions_apply": {
+      "description": "Exclusions link for rewards",
+      "message": "Exclusions apply"
+   },
+   "Finish_logging_in_to_activate": {
+      "description": "Button cta while button is disabled while we are waiting for login to complete",
+      "message": "Finish logging in to activate"
+   },
+   "Finishing_up": {
+      "description": "Text displayed when we're finishing up",
+      "message": "Finishing up..."
+   },
+   "Free_Premium_Features": {
+      "description": "Title for the free premium features section",
+      "message": "Free Premium Features"
+   },
+   "Get_REWARDS_cash_back": {
+      "description": "Subtitle for cash back rewards",
+      "message": "Get {REWARDS}% Cash Back"
+   },
+   "Get_cash_back_on_this_purchase": {
+      "description": "Label text for Cash Back message in Instant Rewards prompt",
+      "message": "Get cash back on this purchase!"
+   },
+   "Get_cash_back_when_you_make_a_qualifying_purchase": {
+      "description": "Label text for Cash Back message in Instant Rewards prompt",
+      "message": "Get cash back when you make a qualifying purchase"
+   },
+   "Get_paid_to_see_a_limited_number_of_pie_approved_adds": {
+      "message": "Get paid to see a limited number of Pie-approved ads"
+   },
+   "Getting_started_with_PieGPT": {
+      "description": "PieGPT onboarding title",
+      "message": "Getting started with PieGPT"
+   },
+   "Got_it": {
+      "description": "Generic CTA",
+      "message": "Got it"
+   },
+   "Grant_permissions": {
+      "description": "Button to grant our extension permissions to access all sites",
+      "message": "Grant permissions"
+   },
+   "Help_resolve_this_by_turning_them_off": {
+      "description": "YouTube ad detected with competitor installed",
+      "message": "Help resolve this by turning them off."
+   },
+   "Help_us_improve_by_telling_us_what_happened": {
+      "message": "Help us improve by telling us what happened"
+   },
+   "Here_are_a_few_of_the_most_common_questions_we_get_from_first_time_users": {
+      "description": "Popover FTUE message",
+      "message": "Here are a few of the most common questions we get from first-time users:"
+   },
+   "Hours": {
+      "description": "Hours",
+      "message": "Hours"
+   },
+   "How_about_leaving_a_review": {
+      "description": "Embedded UI review module",
+      "message": "How about leaving a review?"
+   },
+   "How_do_I_find_ads_that_Reward_me": {
+      "description": "Popover FTUE Q and A",
+      "message": "How do I find ads that Reward me?"
+   },
+   "How_many_Rewards_can_I_expect_to_earn": {
+      "description": "Popover FTUE Q and A",
+      "message": "How many Rewards can I expect to earn?"
+   },
+   "How_was_the_response_you_received_from_PieGPT": {
+      "description": "Feedback form heading for PieGPT",
+      "message": "How was the response you received from PieGPT?"
+   },
+   "I_dont_care_about_cookies_Stop_showing_me_those_damn_things": {
+      "description": "Option to stop showing cookie consent popups",
+      "message": "I don't care about cookies. Stop showing me those damn things."
+   },
+   "Id_like_to_support_this_site_by_allowing_ads": {
+      "description": "Option in Adblock feedback form",
+      "message": "I’d like to support this site by allowing ads"
+   },
+   "If_you_want_to_earn_Cash_Back_and_Rewards_for_Shopping_you_need_to_download_the_Pie_Shopping_companion_extension": {
+      "description": "Subtitle for shopping extension cross sell popup",
+      "message": "If you want to earn Cash Back and Rewards for Shopping, you need to download the Pie Shopping companion extension."
+   },
+   "Im_still_seeing_ads": {
+      "description": "Option in Adblock feedback form",
+      "message": "I'm still seeing ads"
+   },
+   "In_Classic_Mode_you_wont_be_able_to_access_this_screen": {
+      "description": "Detect ads popup settings memo",
+      "message": "In Classic Mode, you won't be able to access this screen."
+   },
+   "In_Money_Mode_youll_earn_rewards_for_every_ad_you_block": {
+      "description": "Mode mode description",
+      "message": "In {MONEY_MODE}, you'll earn rewards for EVERY ad you block! {TERMS_LINK}"
+   },
+   "In_order_to_claim_rewards_youll_need_a_free_Pie_account_It_will_not_allow_us_access_to_any_unique_information_about_your_ChatGPT_account_or_your_usage": {
+      "description": "Explanation of PieGPT signup benefits",
+      "message": "In order to claim rewards, you’ll need a free Pie account. It will not allow us access to any unique information about your ChatGPT account or your usage."
+   },
+   "In_order_to_earn_rewards_while_shopping_with_AI_you_will_need_to_log_in_with_Pie_on_ChatGPT_But_first_try_it_out_with_one_of_these_prompts": {
+      "description": "PieGPT onboarding",
+      "message": "In order to earn rewards while shopping with AI, you will need to log in with Pie on ChatGPT. But first try it out with one of these prompts!"
+   },
+   "Install_Pie_Adblock": {
+      "description": "Prompt to install Pie Adblock",
+      "message": "Install Pie Adblock"
+   },
+   "Install_Pie_Shopping": {
+      "description": "Prompt to install Pie Shopping",
+      "message": "Install Pie Shopping"
+   },
+   "Install_our_companion_extension_to_instantly_earn_REWARDS_and_activate_Rewards_on_partner_sites": {
+      "description": "Shopping x sell description",
+      "message": "Install our companion extension to instantly earn {REWARDS} and activate Rewards on partner sites!"
+   },
+   "Invite_friends": {
+      "description": "Prompt to invite friends",
+      "message": "Invite friends"
+   },
+   "It_didnt_render_correctly": {
+      "description": "Feedback option for PieGPT",
+      "message": "It didn’t render correctly"
+   },
+   "It_looks_like_we_detected_a_YouTube_ad": {
+      "description": "YouTube ad detected with competitor installed",
+      "message": "It looks like we detected a YouTube ad. Sometimes, this can happen due to multiple ad blockers conflicting with each other."
+   },
+   "It_looks_like_youve_already_redeemed_intro_offer": {
+      "description": "Intro ad already redeemed explanation",
+      "message": "It looks like you’ve already claimed our intro offer! Now that you’ve logged in, we’ll continue to show you new offers when available."
+   },
+   "It_wasnt_relevant_to_me": {
+      "description": "Feedback option for PieGPT",
+      "message": "It wasn’t relevant to me"
+   },
+   "Join_Pie_to_Unlock_Rewards": {
+      "description": "Pomprt to join pie",
+      "message": "Join Pie to Unlock Rewards"
+   },
+   "Join_for_free": {
+      "description": "Registration CTA",
+      "message": "Join for free"
+   },
+   "Join_to_Claim_Rewards": {
+      "description": "CTA for login intro ad",
+      "message": "Join to Claim Rewards"
+   },
+   "Keep_PieGPT_as_my_default": {
+      "description": "Settings option to use PieGPT as default",
+      "message": "Keep PieGPT as my default"
+   },
+   "Keep_track_of_your_cash_back_with_Pie_Shopping": {
+      "description": "Heading for cross-sell of Pie Shopping",
+      "message": "Keep track of your cash back with Pie Shopping"
+   },
+   "LOGIN_to_claim_your_rewards": {
+      "description": "Prompt to log in to claim reward",
+      "message": "{LOGIN} to claim your reward!"
+   },
+   "Launch_PieGPT": {
+      "description": "CTA to go to PieGPT",
+      "message": "Launch PieGPT"
+   },
+   "Learn_more": {
+      "description": "Prompt to learn more",
+      "message": "Learn more"
+   },
+   "Learn_more_about_Money_Mode": {
+      "description": "Prompt to learn more about Money Mode",
+      "message": "Learn more about Money Mode"
+   },
+   "Learn_more_about_Pie_ads_and_claim_your_first_reward": {
+      "description": "Extension cross sell popup subtitle",
+      "message": "Learn more about Pie ads and claim your first reward!"
+   },
+   "Learn_more_about_Rewards_for_Ads": {
+      "description": "Prompt to learn more about Rewards for Ads",
+      "message": "Learn more about Rewards for Ads"
+   },
+   "Lifetime_ads_blocked": {
+      "description": "Popover total ads blocked text",
+      "message": "Lifetime ads blocked"
+   },
+   "Log_in": {
+      "description": "Prompt to log in",
+      "message": "Log in"
+   },
+   "Log_in_or_Sign_up": {
+      "description": "Prompt to log in",
+      "message": "Log in or Sign up"
+   },
+   "Log_in_to_activate_Cash_Back": {
+      "description": "Prompt to log in to activate cash back",
+      "message": "Log in to activate Cash Back"
+   },
+   "Log_in_to_your_Pie_account": {
+      "description": "Prompt to log in",
+      "message": "Log in to your Pie account"
+   },
+   "Logging_in_will_allow_us_to_issue_rewards_to_your_Pie_account_It_will_not_allow_us_access_to_any_unique_information_about_your_ChatGPT_account_or_your_usage": {
+      "description": "Explanation of PieGPT login benefits",
+      "message": "Logging in will allow us to issue rewards to your Pie account. It will not allow us access to any unique information about your ChatGPT account or your usage."
+   },
+   "Looking_for_rewards_for_ads": {
+      "description": "Subtitle for login intro ad",
+      "message": "Looking for Rewards for Ads? You must have an account to earn."
+   },
+   "Make_PieGPT_your_default_GPT_search_LEARNMORE": {
+      "description": "Label for PieGPT setting. LEARNMORE replaced with a link to learn more",
+      "message": "Make PieGPT your default GPT search. {LEARNMORE}"
+   },
+   "Make_sure_that_you_have_Rewards_for_Ads_enabled": {
+      "description": "Popover FTUE Q and A",
+      "message": "Make sure that you have Rewards for Ads enabled. If you do, then we will surface you various types of ads that reward you as you go about using the internet as you normally would. You can learn more about the types of Rewards for Ads in our {REWARDSHUB}. Once you start earning Rewards you will need to create an account so that we are able to attach those earned rewards to you as a user. If you see an ad that does not reward you (which will have a Pie logo attached to the ad), that is likely a bug and you can report it to our team."
+   },
+   "Merchant_Instant_Rewards_Offer": {
+      "description": "Retargeting title",
+      "message": "{MERCHANT} Instant Rewards Offer"
+   },
+   "Merchant_Misses_You": {
+      "description": "Re-targeting title",
+      "message": "{MERCHANT} Misses You!"
+   },
+   "Minutes": {
+      "description": "Minutes",
+      "message": "Minutes"
+   },
+   "Money_Mode": {
+      "message": "Money Mode"
+   },
+   "Money_Mode_Unlocked": {
+      "description": "Notice to indicate Money Mode has been unlocked",
+      "message": "Money Mode Unlocked!"
+   },
+   "Money_Mode_is_active": {
+      "description": "Title when Money Mode is activated",
+      "message": "Money Mode is active!"
+   },
+   "My_account": {
+      "description": "Link to users account",
+      "message": "My account"
+   },
+   "NUMCOUPONS_coupons_found_E": {
+      "description": "When we have multiple coupons",
+      "message": "{NUMCOUPONS} coupons found!"
+   },
+   "NUMCOUPONS_coupons_found_for_MERCHANT": {
+      "description": "When we have multiple coupons",
+      "message": "{NUMCOUPONS} coupons found for {MERCHANT}!"
+   },
+   "NUMCOUPONS_coupons_remaining": {
+      "description": "When we're working on applying multiple coupons",
+      "message": "{NUMCOUPONS} coupons remaining"
+   },
+   "NUMCOUPONS_more_tried_at_checkout": {
+      "description": "When we're trying more coupons at checkout",
+      "message": "{NUMCOUPONS} more tried at checkout"
+   },
+   "NUM_ads_blocked": {
+      "description": "Adblock stats popup",
+      "message": "{NUM} ads blocked"
+   },
+   "NUM_invites_unlocked_for_a_limited_time": {
+      "description": "Invite friends prompt",
+      "message": "{NUM} invites unlocked for a limited time: Earn bonus rewards via Money Mode for referring friends"
+   },
+   "NUM_plus_ads_blocked_e": {
+      "description": "Adblock review popup",
+      "message": "{NUM}+ ads blocked!"
+   },
+   "NUM_products_have_Cash_Back_offers": {
+      "description": "Message on product search page when multiple products have offers available",
+      "message": "{NUM} products have Cash Back offers!"
+   },
+   "Need_to_turn_off_adblock_on_all_sites": {
+      "description": "Prompt to turn off adblock on all sites",
+      "message": "Need to turn off adblock on all sites?"
+   },
+   "Never_show_Pie_Shopping_again": {
+      "description": "Option to never show Pie Shopping again",
+      "message": "Never show Pie Shopping again"
+   },
+   "Nevermind": {
+      "description": "Option to cancel",
+      "message": "Nevermind"
+   },
+   "No_Thanks_Continue_Checkout": {
+      "description": "Option to skip",
+      "message": "No Thanks, Continue Checkout"
+   },
+   "No_coupons_rewards": {
+      "description": "Pie did not pop coupons or rewards feedback",
+      "message": "Pie did not pop coupons or rewards"
+   },
+   "No_thanks": {
+      "description": "Option to skip",
+      "message": "No thanks"
+   },
+   "No_thanks_I_dont_want_Cash_Back": {
+      "description": "Option to skip",
+      "message": "No thanks, I don't want Cash Back"
+   },
+   "Offer_Found": {
+      "message": "Offer Found!"
+   },
+   "Okay": {
+      "description": "Generic confirmation button",
+      "message": "Okay"
+   },
+   "Once_you_complete_your_purchase": {
+      "description": "Message when embedded cash back is activated",
+      "message": "Once you complete your purchase we'll send you an email with details about your Cash Back earnings."
+   },
+   "Original_Total": {
+      "description": "Original total of the cart",
+      "message": "Original Total"
+   },
+   "Other": {
+      "description": "'Other' option in feedback form",
+      "message": "Other"
+   },
+   "Other_adblockers_charge_you_for_these": {
+      "description": "Explanation of free premium features",
+      "message": "Other adblockers charge you for these. Not us."
+   },
+   "Over_1_hour_of_ads_blocked": {
+      "description": "Money Mode prompt on YouTube",
+      "message": "Over 1 hour of ads blocked!"
+   },
+   "POINTS_EARNED_of_POINTS_AVAILABLE_points_earned": {
+      "description": "Money mode points earned message",
+      "message": "{POINTS_EARNED} of {POINTS_AVAILABLE} points earned!"
+   },
+   "POINTS_earned_for_VISITING_this_partner_site": {
+      "description": "IR popup rewards information",
+      "message": "{POINTS} earned for {VISITING} this partner site."
+   },
+   "POINTS_earned_just_for_trying_it_out": {
+      "description": "Points incentive for trying a feature",
+      "message": "{POINTS} earned just for trying it out!"
+   },
+   "POINTS_points": {
+      "description": "A user's rewards points balance",
+      "message": "{POINTS} points"
+   },
+   "PieGPT_gives_you_rewards_for_shopping_with_AI": {
+      "description": "Heading for the PieGPT Learn More prompt",
+      "message": "PieGPT gives you rewards for shopping with AI"
+   },
+   "Pie_Adblock_stats_for_this_website": {
+      "description": "Detect ads popup title",
+      "message": "Pie Adblock stats for this website"
+   },
+   "Pie_Exclusive_Coupon": {
+      "description": "When we have a coupon that's exclusive to Pie",
+      "message": "Pie Exclusive Coupon!"
+   },
+   "Pie_Rewards_are_temporarily_disabled_for_this_merchant": {
+      "description": "When Pie chooses not to present a rewards option because Pie is standing down",
+      "message": "Pie Rewards are temporarily disabled for this merchant because it has detected that you previously clicked a referral link from a different publisher or creator. Pie will stand down (temporarily disable on this store) for 7 days from when a cookie was set by another affiliate publisher. Learn more about how this work here: https://help.pie.org/article/41-why-cant-i-get-cash-back"
+   },
+   "Pie_activated_a_tracking_link_because_you_activated_Pie_Rewards_on_Amazon": {
+      "description": "When Pie creates an affiliate tag on amazon for a product, this message prints to the console to inform the user",
+      "message": "Pie activated a tracking link because you activated a Pie Rewards offer on Amazon. These rewards are paid for by the Amazon seller (not Amazon itself), and Pie shares the advertising commission earned with you. Learn more about how this works here: https://help.pie.org/article/44-how-do-pie-offers-on-amazon-work"
+   },
+   "Pie_ad_blocker_just_blocked_an_affiliate_tracker": {
+      "description": "When Pie blocks an affiliate tracker",
+      "message": "Pie Adblock just blocked an affiliate tracker."
+   },
+   "Pie_has_set_an_affiliate_cookie_on_this_merchant": {
+      "description": "When Pie creates an affiliate tag, this message prints to the console to inform the user",
+      "message": "Pie has set an affiliate cookie on this merchant because you activated the available Pie Rewards offer. Pie gives you 100% of any merchant affiliate commissions collected to you on your qualifying purchases. When the order is confirmed by the merchant, your Pie account will be credited but this can take up 60 days to allow for returns. Travel rewards will be confirmed after your completed trip. Learn more about why here: https://help.pie.org/article/43-how-long-does-it-take-to-receive-shopping-rewards"
+   },
+   "Pie_is_blocking_ads_but_it_needs_your_permission_to_remove_leftover_blank_spaces_and_clean_up_pages_completely": {
+      "description": "Instructions in popover for why user should grant permissions.",
+      "message": "Pie is blocking ads, but it needs your permission to remove leftover blank spaces and clean up pages completely."
+   },
+   "Pie_is_causing_issues_on_this_site": {
+      "description": "Option in Adblock feedback form",
+      "message": "Pie is causing issues on this site"
+   },
+   "Please_let_us_know_how_we_can_improve": {
+      "description": "Prompt to get feedback",
+      "message": "Please let us know how we can improve"
+   },
+   "Please_note_that_enabling_ads_on_this_creator_will_not_earn_you_Rewards_for_Ads": {
+      "description": "Disclaimer on channel allowlist popup",
+      "message": "Please note that enabling ads on this creator will not earn you Rewards for Ads"
+   },
+   "Please_note_that_enabling_ads_on_this_site_will_not_earn_you_Rewards_for_Ads": {
+      "description": "Disclaimer when allowing ads for a website",
+      "message": "Please note that enabling ads on this site will not earn you Rewards for Ads."
+   },
+   "Powered_by": {
+      "description": "Powered by text",
+      "message": "Powered by"
+   },
+   "Prevent_websites_from_spying_on_your_every_move": {
+      "description": "Option to prevent websites from spying",
+      "message": "Prevent websites from spying on your every move."
+   },
+   "Price_increased": {
+      "description": "Feedback for when the user's cart price goes up after applying all coupons",
+      "message": "The price increased after I used Pie"
+   },
+   "Purchase_products_featuring_the_BADGE_badge_to_unlock_savings": {
+      "description": "Message on a product search page when offers are available for multiple products, indicated by a badge",
+      "message": "Purchase products featuring the {BADGE} badge to unlock savings"
+   },
+   "REWARDSFIXED_Points_Back": {
+      "description": "Rewards rate back in points",
+      "message": "{REWARDSFIXED} Points Back"
+   },
+   "REWARDSPERCENT_Cash_Back": {
+      "description": "Rewards rate back in cash",
+      "message": "{REWARDSPERCENT} Cash Back"
+   },
+   "REWARDS_activated": {
+      "description": "Displayed when rewards are actived. REWARDS is replaced with the rewards amount and type",
+      "message": "{REWARDS} activated!"
+   },
+   "REWARDS_if_you_make_a_qualifying_PURCHASE": {
+      "description": "Rewards disclaimer",
+      "message": "{REWARDS} if you make a qualifying {PURCHASE}"
+   },
+   "REWARDS_on_this_site_with_Pie_Shopping": {
+      "description": "Title for shopping x sell",
+      "message": "{REWARDS} on this site with Pie Shopping!"
+   },
+   "ReEnable_Permanently": {
+      "description": "Prompt to re-enable the extension",
+      "message": "Re-Enable Permanently"
+   },
+   "Refer_up_to_NUM_friends_in_the_next_HOURS_hours_to_activate_Money_Mode_and_earn_up_to_POINTS": {
+      "description": "Mode mode description",
+      "message": "Refer up to {NUM_FRIENDS} friends in the next {HOURS} hours to activate Money Mode and earn up to {POINTS} {DOLLAR_AMOUNT}! {TERMS_LINK}"
+   },
+   "Remember_choice_for_this_site_and_dont_show_me_this_again": {
+      "description": "Option to remember an input for site",
+      "message": "Remember choice for this site and don't show me this again"
+   },
+   "Report_Bug": {
+      "description": "Prompt to report a bug",
+      "message": "Report Bug"
+   },
+   "Report_Issue": {
+      "description": "Prompt to report an issue (in feedback form)",
+      "message": "Report Issue"
+   },
+   "Request_merchant": {
+      "description": "Prompt to request support for a merchant",
+      "message": "Request merchant"
+   },
+   "Requires_an_account": {
+      "description": "Prompt that user must log in",
+      "message": "Requires an account"
+   },
+   "Requires_purchase": {
+      "description": "Explanation that user must make a purchase",
+      "message": "Requires purchase"
+   },
+   "Rewards": {
+      "description": "Title for the rewards section",
+      "message": "Rewards"
+   },
+   "Rewards_Hub": {
+      "message": "Rewards Hub"
+   },
+   "Rewards_Locked": {
+      "message": "Rewards Locked"
+   },
+   "Rewards_for_ads_temporarily_disabled": {
+      "description": "Title when rewards for ads are temporarily disabled",
+      "message": "Rewards for Ads temporarily disabled"
+   },
+   "Rewards_found_E": {
+      "description": "Popup title when we have rewards",
+      "message": "Rewards found!"
+   },
+   "SAVINGS_off": {
+      "description": "Amount saved",
+      "message": "{SAVINGS} off"
+   },
+   "SHOPPING_EXTENSION_DESCRIPTION": {
+      "description": "The description of the shopping extension in the chrome web store",
+      "message": "Save money effortlessly with Pie Shopping: activate Cash Back, auto-apply coupons, and use our AI side panel for smart deals!"
+   },
+   "SHOPPING_EXTENSION_NAME": {
+      "description": "The name of the shopping extension in the chrome web store",
+      "message": "Pie Shopping: AI Cash Back and Coupons"
+   },
+   "STARCOUNT_Stars": {
+      "description": "Star rating",
+      "message": "{STARCOUNT} Stars"
+   },
+   "Savings": {
+      "description": "Title for the savings section",
+      "message": "Savings"
+   },
+   "Seconds": {
+      "description": "Seconds",
+      "message": "Seconds"
+   },
+   "See_FULLEXCLUSIONS": {
+      "message": "See {FULLEXCLUSIONS}."
+   },
+   "See_ads_get_removed": {
+      "description": "Description for adblock visual mode",
+      "message": "See ads get removed"
+   },
+   "See_terms": {
+      "message": "See terms"
+   },
+   "Set_this_as_your_default_GPT_search_on_this_browser_Recommended_for_max_rewards": {
+      "description": "Description of setting to enable PieGPT as default",
+      "message": "Set this as your default GPT search on this browser. Recommended for max rewards."
+   },
+   "Settings": {
+      "description": "Title for the settings section",
+      "message": "Settings"
+   },
+   "Share": {
+      "description": "Prompt to share",
+      "message": "Share"
+   },
+   "Share_on_facebook": {
+      "description": "Prompt to share on facebook",
+      "message": "Share on facebook"
+   },
+   "Share_preview": {
+      "description": "Share preview header",
+      "message": "Share preview"
+   },
+   "Share_with_the_community": {
+      "description": "Prompt to share with the community",
+      "message": "Share with the community?"
+   },
+   "Share_with_up_to_NUM_friends_to_activate_money_mode_and_earn_up_to_POINTS": {
+      "description": "Mode mode description",
+      "message": "Share with up to {NUM_FRIENDS} friends to activate {MONEY_MODE} and earn up to {POINTS} points {DOLLAR_AMOUNT}! {TERMS_LINK}"
+   },
+   "Share_with_your_friends_and_earn_more": {
+      "description": "Money Mode prompt on YouTube",
+      "message": "Share with your friends and earn more."
+   },
+   "Sign_Out": {
+      "description": "Prompt to sign out",
+      "message": "Sign Out"
+   },
+   "Sign_Up": {
+      "description": "Button to sign up",
+      "message": "Sign Up"
+   },
+   "Sign_into_Amazon_to_Continue": {
+      "description": "Prompt to sign into Amazon",
+      "message": "Sign into Amazon to Continue"
+   },
+   "Sign_up_for_Pie_to_earn_rewards_Its_free": {
+      "description": "Prompt to sign up for Pie",
+      "message": "Sign up for Pie to earn rewards! It's free."
+   },
+   "Sign_up_or_log_in": {
+      "description": "Auth message",
+      "message": "Sign up or log in"
+   },
+   "Sign_up_or_log_in_to_earn_Rewards": {
+      "description": "Prompt to sign up or log in to earn rewards",
+      "message": "Sign up or log in to earn Rewards"
+   },
+   "Sign_up_or_log_in_to_start_earning_Rewards": {
+      "description": "Prompt to sign up or log in to earn rewards",
+      "message": "Sign up or log in to start earning Rewards"
+   },
+   "Simple_Mode": {
+      "description": "Option to enable simple mode",
+      "message": "Simple Mode"
+   },
+   "Site_told_me_to_disable_adblock": {
+      "description": "Option in Adblock feedback form",
+      "message": "Site told me to disable adblock"
+   },
+   "Site_wouldnt_load_correctly": {
+      "description": "Option in Adblock feedback form",
+      "message": "Site wouldn't load correctly"
+   },
+   "Snooze_Cash_Back_offers": {
+      "description": "Option to snooze all Cash Back",
+      "message": "Snooze Cash Back offers"
+   },
+   "Snooze_Instant_Rewards_ads": {
+      "description": "Option to snooze all Instant Rewards",
+      "message": "Snooze Instant Rewards ads"
+   },
+   "Snooze_Offers_for_HOURS_hours": {
+      "description": "Option to snooze intent engine offers",
+      "message": "Snooze offers for {HOURS} hours"
+   },
+   "Snooze_Pie_ads": {
+      "description": "Option to snooze all Pie Offers",
+      "message": "Snooze Pie Ads"
+   },
+   "Snooze_for_one_month": {
+      "description": "Option to snooze for one month",
+      "message": "Snooze for one month"
+   },
+   "Snooze_this_ad": {
+      "description": "Option to snooze a Pie Offer type",
+      "message": "Snooze this ad"
+   },
+   "Snoozed_for_COUNT_hours": {
+      "description": "Success message when a Pie Offer is snoozed",
+      "message": "Snoozed for {COUNT} hours"
+   },
+   "Something_went_wrong": {
+      "description": "Title shown When something goes wrong (e.g. when the users cart price goes up after applying all coupons)",
+      "message": "Something went wrong"
+   },
+   "Space_saved_with_VISUALMODE": {
+      "description": "Detect ads popup stats",
+      "message": "Space saved with {VISUALMODE}"
+   },
+   "Sponsored_video": {
+      "description": "Sponsored ads popover message",
+      "message": "Sponsored video"
+   },
+   "Start_new_chat": {
+      "description": "Button to start a new AI chat",
+      "message": "Start new chat"
+   },
+   "Submit": {
+      "description": "Button to submit",
+      "message": "Submit"
+   },
+   "Submit_feedback_to_our_developers_so_we_can_look_into_it_immediately": {
+      "description": "YouTube ad detected with competitor installed - failed",
+      "message": "Submit feedback to our developers so we can look into it immediately."
+   },
+   "Success": {
+      "description": "Generic success message",
+      "message": "Success"
+   },
+   "Support_the_creators_you_love_by_allowing_ads_to_play_on_their_channels_Well_still_block_ads_on_other_channels": {
+      "description": "Option to support creators",
+      "message": "Support the creators you love by allowing ads to play on their channels. We'll still block ads on other channels."
+   },
+   "Support_the_sites_you_love_by_allowing_their_ads_to_show_Please_note_that_allowing_ads_on_this_site_will_not_earn_you_Rewards_for_Ads": {
+      "description": "Option to support publishers",
+      "message": "Support the sites you love by allowing their ads to show. Please note that allowing ads on this site will not earn you Rewards for Ads."
+   },
+   "Support_this_channel": {
+      "message": "Support this channel"
+   },
+   "Take_back_control_of_the_internet_LINK": {
+      "description": "Money Mode referral text",
+      "message": "Take back control of the internet with the best free ad blocker. New users get bonus rewards! It even blocks ads on Facebook and YouTube! Here’s my referral link: {LINK}"
+   },
+   "Tap_APPLY_COUPONS_at_checkout_to_try_it": {
+      "description": "Popover coupons module",
+      "message": "Tap {APPLY_COUPONS} at checkout to try it!"
+   },
+   "Tap_APPLY_COUPONS_at_checkout_to_try_them_all": {
+      "description": "Popover coupons module",
+      "message": "Tap {APPLY_COUPONS} at checkout to try them all!"
+   },
+   "Tap_FINISH_SETUP_below": {
+      "description": "Tap finish setup",
+      "message": "Tap {FINISH_SETUP} below"
+   },
+   "Tap_below_to_allow_full_access_for_the_best_ad_free_experience_in_Safari": {
+      "description": "Instructions in popover for how to grant permissions",
+      "message": "Tap below to allow full access for the best ad-free experience in Safari."
+   },
+   "Tell_us_more": {
+      "description": "Label for feedback form input field",
+      "message": "Tell us more"
+   },
+   "Tell_us_more_optional": {
+      "description": "Label for optional feedback form input field",
+      "message": "Tell us more (optional)"
+   },
+   "Tell_us_what_happened": {
+      "description": "Prompt to tell us more about a bug",
+      "message": "Tell us what happened"
+   },
+   "Thank_You_E": {
+      "description": "Thank you message",
+      "message": "Thank You!"
+   },
+   "Thank_you_for_submitting_feedback_E": {
+      "description": "Thank you message for feedback",
+      "message": "Thank you for submitting feedback!"
+   },
+   "Thank_you_for_your_feedback": {
+      "description": "Thank you message for feedback",
+      "message": "Thank you for your feedback."
+   },
+   "Thanks_for_activating_Cash_Back": {
+      "description": "Title when user activates Cash Back from embedded cash back prompt",
+      "message": "Thanks for activating Cash Back!"
+   },
+   "Thanks_for_using_Money_Mode": {
+      "description": "Title when Money Mode is completed",
+      "message": "Thanks for using Money Mode!"
+   },
+   "That_is_totally_fine_We_are_continuously_enhancing_our_world_class_adblocker": {
+      "description": "Popover FTUE Q and A",
+      "message": "That is totally fine. We are continuously enhancing our world-class ad blocker and intend to keep it completely free for our users, even if they don’t want to participate in the Rewards for Ads program. You can change your settings at any time {HERE}."
+   },
+   "The_link_was_broken": {
+      "description": "Feedback option for PieGPT",
+      "message": "The link was broken"
+   },
+   "The_total_number_of_ads_Pie_has_blocked_for_you_across_all_sites_and_pages": {
+      "description": "Popover total ads blocked tooltip",
+      "message": "The total number of ads Pie has blocked for you across all sites and pages."
+   },
+   "Theyd_like_to_pay_you_to_have_another_look_around": {
+      "description": "Re-targeting subtitle",
+      "message": "They'd like to pay you to have another look around the store."
+   },
+   "Thinking_of_breaking_up_with_our_automatic_coupons_and_adblocker_If_youre_set_on_leaving_you_can_delete_your_account_Well_definitely_miss_you_but_we_respect_your_choice_Just_remember_deleting_your_account_is_irreversible": {
+      "description": "Prompt to delete account",
+      "message": "Thinking of breaking up with our automatic coupons and adblocker? If you're set on leaving, you can delete your account. We'll definitely miss you, but we respect your choice. Just remember, deleting your account is irreversible."
+   },
+   "This_Is_A_Pie_Offer": {
+      "description": "Intro ad rewards transaction popup title",
+      "message": "This Is A Pie Offer"
+   },
+   "This_can_be_changed_at_any_time_in_SETTINGS": {
+      "description": "Fair ads sign up or opt in notification text",
+      "message": "This can be changed at any time in {SETTINGS}."
+   },
+   "This_creator_is_part_of_the_Pie_Creator_Network_You_are_receiving_rewards_for_seeing_this_video": {
+      "description": "Fair ads Pie Creator Network popover message",
+      "message": "This creator is part of our Fair Ads program. You are receiving rewards for video ads on their channel."
+   },
+   "This_enables_Pie_to_fetch_Cash_Back_rewards_and_unique_deals_for_you_so_that_GPT_can_incorporate_them_in_your_response_whenever_relevant": {
+      "description": "Onboarding explanation for enabling PieGPT permissions",
+      "message": "This enables Pie to fetch Cash Back rewards and unique deals for you so that GPT can incorporate them in your response whenever relevant."
+   },
+   "This_is_an_Instant_Rewards_offer": {
+      "description": "Instant rewards explainer",
+      "message": "This is an Instant Rewards offer. If eligible, you will receive rewards points just for visiting the site, no additional action required."
+   },
+   "This_website_is_not_a_supported_merchant_If_its_a_store_you_can_request_it_below": {
+      "description": "Error message when a site is not supported",
+      "message": "This website is not a supported merchant. If it's a store, you can request it below."
+   },
+   "Time_saved": {
+      "description": "The amount of time we saved a user blocking video ads on a page",
+      "message": "Time saved"
+   },
+   "Total_ads_blocked": {
+      "description": "Detect ads popup stats",
+      "message": "Total ads blocked"
+   },
+   "Try_PieGPT_in_ChatGPT": {
+      "description": "CTA to go to PieGPT",
+      "message": "Try PieGPT in ChatGPT"
+   },
+   "Try_Pie_Shopping": {
+      "description": "CTA to install Pie Shopping",
+      "message": "Try Pie Shopping"
+   },
+   "Turbo_Apply": {
+      "description": "Button to apply coupons faster",
+      "message": "Turbo Apply!"
+   },
+   "Uh_oh_it_looks_like_your_cart_price_may_have_increased_Sometimes_this_happens_when_you_already_had_a_coupon_applied_Try_reapplying_your_original_coupon_or_running_Pie_again": {
+      "message": "Uh oh, it looks like your cart price may have increased. Sometimes this happens when you already had a coupon applied. Try reapplying your original coupon or running Pie again."
+   },
+   "Unlock_Rewards": {
+      "description": "Prompt to unlock rewards",
+      "message": "Unlock Rewards"
+   },
+   "Unsupported_website": {
+      "description": "Unsupported store message",
+      "message": "Unsupported website."
+   },
+   "Up_to_REWARDSVALUE": {
+      "description": "Rewards value text",
+      "message": "Up to {REWARDSVALUE}"
+   },
+   "Use_PieGPT_as_my_ChatGPT_default": {
+      "description": "Setting for PieGPT",
+      "message": "Use PieGPT as my ChatGPT default"
+   },
+   "Use_detected_REWARDSPROGRAM_rewards": {
+      "description": "Use an existing rewards program for tracking",
+      "message": "Use existing {REWARDSPROGRAM} rewards"
+   },
+   "Use_existing_tracker": {
+      "description": "Option to use existing affiliate tracker on selection",
+      "message": "Use existing tracker"
+   },
+   "Using_AI_for_shopping_recommendations_You_can_still_earn_Cash_Back_and_Instant_Rewards_bonuses_with_our_new_custom_Pie_Shopping_GPT_LEARNMORE": {
+      "description": "Description of PieGPT. LEARNMORE replaced by a link to a help page",
+      "message": "Using AI for shopping recommendations? You can still earn Cash Back and Instant Rewards bonuses with our new custom Pie Shopping GPT! {LEARNMORE}"
+   },
+   "Using_PieGPT": {
+      "description": "Notification when on the PieGPT page",
+      "message": "Using PieGPT"
+   },
+   "Video_ads_blocked": {
+      "description": "Label for the number of video ads we blocked",
+      "message": "Video ads blocked"
+   },
+   "Video_player_overlay": {
+      "description": "Toggle for feature that displays an inline banner with ads blocked stats in video streams",
+      "message": "Video player overlay"
+   },
+   "Visit": {
+      "description": "Prompt to visit",
+      "message": "Visit"
+   },
+   "Visit_HOSTNAME": {
+      "description": "CTA for IR",
+      "message": "Visit {HOSTNAME}"
+   },
+   "Visit_site": {
+      "description": "Prompt to visit site",
+      "message": "Visit site"
+   },
+   "Visual": {
+      "description": "Option to enable visual mode",
+      "message": "Visual"
+   },
+   "Visual_Mode": {
+      "description": "Option to enable visual mode",
+      "message": "Visual Mode"
+   },
+   "Visual_screen_space_saved": {
+      "description": "Popover adblocker stats",
+      "message": "Visual screen space saved"
+   },
+   "Want_even_more_ways_to_earn": {
+      "description": "Prompt to earn more rewards",
+      "message": "Want even more ways to earn?"
+   },
+   "We_are_a_relatively_new_company": {
+      "description": "Popover FTUE Q and A",
+      "message": "We are a relatively new company. As our number of users grow, we are able to negotiate better deals with partners to get our users more rewards. In the beginning the average person can expect to earn a couple dollars a month and we aim to quickly increase that over time. This will vary depending on user country and behavior. People that shop online frequently will typically earn more rewards. Read a statement from our founder {HERE}."
+   },
+   "We_detected_that_this_video_includes_a_paid_promotion": {
+      "description": "Sponsored ads popover message",
+      "message": "We detected that this video includes a paid promotion. We've chosen not to block these segments, as they’re part of the creator’s unique video content. Use the bug report form if you spot other issues."
+   },
+   "We_just_blocked_NUM_ads_on_this_page": {
+      "description": "Embedded UI review module",
+      "message": "We just blocked {NUM} ads on this page!"
+   },
+   "We_saved_you_a_click_were_not_miracle_workers_Enjoy_SAVINGS": {
+      "description": "Message when we save the user a click",
+      "message": "We saved you a click, we're not miracle workers. Enjoy {SAVINGS}!"
+   },
+   "We_showed_you_the_visual_mode": {
+      "description": "Visual mode onboarding description",
+      "message": "We showed you the {VISUALMODE} for your first experience but we’ll load your pages ad-free from here on out. You can turn this back on at any time!"
+   },
+   "We_tried_all_available_codes_Check_out_knowing_you_have_the_best_price_we_could_find": {
+      "description": "Message when we can't find a coupon",
+      "message": "We tried all available codes. Check out knowing you have the best price we could find."
+   },
+   "We_tried_all_available_codes_but_well_still_hook_you_up_with_rewards_on_qualifying_purchases": {
+      "description": "Message when we can't find a coupon",
+      "message": "We tried all available codes, but we'll still hook you up with rewards on qualifying purchases."
+   },
+   "We_tried_all_the_coupons_we_had_but_none_lowered_your_price_Check_out_knowing_you_have_the_best_price_we_could_find": {
+      "description": "Message when we can't find a coupon",
+      "message": "We tried all the coupons we had, but none lowered your price. Check out knowing you have the best price we could find."
+   },
+   "We_use_toptier_adblock_lists_that_are_constantly_updated_to_make_sure_you_get_as_pure_an_internet_experience_possible": {
+      "description": "Explanation of adblock",
+      "message": "We use top-tier adblock lists that are constantly updated to make sure you get as pure an internet experience possible."
+   },
+   "We_wont_show_you_rewards_available_in_Pie_Shopping_again_for_one_month": {
+      "description": "Snooze Pie Shopping rewards message",
+      "message": "We won't show you rewards available in Pie Shopping again for one month."
+   },
+   "Welcome_Back": {
+      "description": "Welcome back message",
+      "message": "Welcome back!"
+   },
+   "Welcome_To_Pie": {
+      "description": "Welcome message",
+      "message": "Welcome to Pie!"
+   },
+   "Welcome_To_Pie_Adblock": {
+      "description": "Popover FTUE welcome title",
+      "message": "Welcome to Pie Adblock!"
+   },
+   "Well_automatically_close_annoying_anti_adblock_popups": {
+      "description": "Explanation of Enhanced Pop-up Blocking",
+      "message": "We'll automatically close annoying anti-adblock popups the best we can"
+   },
+   "Well_do_our_best_to_stop_those_pesky_YouTube_ads_Note_Sometimes_this_may_trigger_YouTubes_adblock_detection": {
+      "description": "Explanation of YouTube adblock",
+      "message": "We'll do our best to stop those pesky YouTube ads. Note: Sometimes, this may trigger YouTube's adblock detection."
+   },
+   "Well_remove_ads_before": {
+      "description": "Description of adblock simple mode",
+      "message": "We'll remove ads before the page loads"
+   },
+   "Were_not_sure_why_YouTube_is_being_mean_but_we_definitely_want_to_get_to_the_bottom_of_it": {
+      "description": "YouTube ad detected with competitor installed - failed",
+      "message": "We're not sure why YouTube is being mean, but we definitely want to get to the bottom of it."
+   },
+   "What_if_I_just_want_adblocking_without_Rewards": {
+      "description": "Popover FTUE Q and A",
+      "message": "What if I just want ad blocking without Rewards?"
+   },
+   "When_you_earn_rewards_we_need_to_be_able_to_attach_them_to_your_account": {
+      "description": "Explanation of login to redeem rewards",
+      "message": "When you earn rewards, we need to be able to attach them to your account, otherwise we won't know that they belong to you."
+   },
+   "Whoa_thats_a_new_coupon": {
+      "description": "Prompt to share a new coupon",
+      "message": "Whoa, that's a new coupon! If it's not just for you or a one-time deal, why not share the love? Add it to the Pie community and spread the savings!"
+   },
+   "Why_am_I_seeing_this_ad": {
+      "message": "Why am I seeing this ad?"
+   },
+   "Why_did_you_disable_Pie_on_this_site": {
+      "description": "Title for the Adblock feedback form",
+      "message": "Why did you disable Pie on this site?"
+   },
+   "Without_a_Pie_account_we_have_no_way_of_attaching_these_points_to_you_as_a_user": {
+      "description": "Logged out instant rewards tool tip",
+      "message": "Without a Pie account, we have no way of attaching these points to you as a user. Therefore it is required for you to have a Pie account in order to effectively earn these points."
+   },
+   "Would_you_like_to_disable_PieGPT_as_your_ChatGPT_default": {
+      "description": "Description of setting to disable PieGPT as default",
+      "message": "Would you like to disable PieGPT as your ChatGPT default?"
+   },
+   "Would_you_like_to_disable_PieGPT_as_your_ChatGPT_default_for_this_session_or_until_you_choose_to_reenable_manually": {
+      "description": "Description of setting to disable PieGPT as default",
+      "message": "Would you like to disable PieGPT as your ChatGPT default for this session or until you choose to re-enable manually?"
+   },
+   "Yes": {
+      "description": "Affirmative confirmation",
+      "message": "Yes"
+   },
+   "Yes_Delete_Account": {
+      "description": "Prompt to delete account",
+      "message": "Yes, Delete Account"
+   },
+   "You_can_choose_to_support_this_site_by_ALLOWINGADS": {
+      "description": "Option in the feedback form to support this site by allowing ads. ALLOWINGADS is replaced by 'allowing ads' in English",
+      "message": "You can choose to support this site by {ALLOWINGADS}."
+   },
+   "You_can_reenable_Visual_Mode_at_any_time_on_the_settings_page": {
+      "description": "Detect ads popup settings memo",
+      "message": "You can re-enable Visual Mode at any time on the settings page."
+   },
+   "You_can_start_a_new_chat_with_the_default_ChatGPT_or_continue_to_read_this_chat": {
+      "description": "Information about options after reaching ChatGPT's usage limit",
+      "message": "You can start a new chat with the default ChatGPT or continue to read this chat."
+   },
+   "You_can_use_PieGPT_on_mobile_devices_without_installing_the_Pie_extension": {
+      "description": "Information about PieGPT availability on mobile",
+      "message": "You can use PieGPT on mobile devices without installing the Pie extension!"
+   },
+   "You_could_be_earning_Rewards_for_ads_on_this_site": {
+      "description": "Popover message when a user is not earning rewards via Fair Ads on this site (opted out)",
+      "message": "You could be earning Rewards for Ads on this site."
+   },
+   "You_got_the_best_price_E": {
+      "description": "Message when we find the best price",
+      "message": "You got the best price!"
+   },
+   "You_just_activated": {
+      "description": "Rewards transaction popup title",
+      "message": "You just activated"
+   },
+   "You_just_blocked_your_NUM_ad_How_about_leaving_us_a_review": {
+      "description": "Adblock review popup",
+      "message": "You just blocked your {NUM}th ad! How about leaving us a review?"
+   },
+   "You_just_blocked_your_NUM_ad_Refer_Pie_to_friends_to_unlock_money_mode": {
+      "description": "Money mode unlock popup",
+      "message": "You just blocked your {NUM}th ad! Refer Pie to friends to unlock {MONEY_MODE}."
+   },
+   "You_just_earned": {
+      "description": "Rewards transaction popup title",
+      "message": "You just earned"
+   },
+   "You_just_earned_REWARDS_for_completing_this_offer_enjoy_your_reward": {
+      "description": "Offer redemption complete message",
+      "message": "You just earned {REWARDS} for completing this offer! Enjoy your reward."
+   },
+   "You_will_automatically_earn_cash_back_on_any_eligible_link_from_PieGPT_but_the_best_way_to_see_your_cash_back_and_Pie_points_in_real_time_is_with_the_Pie_Shopping_extension": {
+      "description": "Description of Pie Shopping cross-sell from PieGPT",
+      "message": "You will automatically earn cash back on any eligible link from PieGPT, but the best way to see your cash back and Pie points in real time is with the Pie Shopping extension!"
+   },
+   "Youll_also_earn_REWARDSFIXEDPOINTSBACK_on_this_site": {
+      "description": "Subtitle for coupon savings with points back rewards. REWARDSFIXEDPOINTSBACK is replaced by e.g. '300 Points Back' in English",
+      "message": "You'll also earn {REWARDSFIXEDPOINTSBACK} on this site!"
+   },
+   "Youll_also_earn_REWARDSPERCENTCASHBACK_on_this_site": {
+      "description": "Subtitle for coupon savings with cash back rewards. REWARDSCASHBACKPERCENT is replaced by e.g. '5% Cash Back' in English",
+      "message": "You'll also earn {REWARDSPERCENTCASHBACK} on this site!"
+   },
+   "Youll_also_earn_up_to_REWARDSFIXEDPOINTSBACK_on_this_site": {
+      "description": "Subtitle for coupon savings with points back rewards. REWARDSFIXEDPOINTSBACK is replaced by e.g. '300 Points Back' in English",
+      "message": "You'll also earn up to {REWARDSFIXEDPOINTSBACK} on this site!"
+   },
+   "Youll_also_earn_up_to_REWARDSPERCENTCASHBACK_on_this_site": {
+      "description": "Subtitle for coupons found with cash back rewards. REWARDSCASHBACKPERCENT is replaced by e.g. '5% Cash Back' in English",
+      "message": "You'll also earn up to {REWARDSPERCENTCASHBACK} on this site!"
+   },
+   "Youll_earn_POINTS_for_VISITING_this_partner_site": {
+      "description": "Footer for instant rewards offer",
+      "message": "You'll earn {POINTS} for {VISITING} this partner site."
+   },
+   "Youll_earn_REWARDSFIXEDPOINTSBACK": {
+      "description": "Subtitle for coupon savings with points back rewards. REWARDSFIXEDPOINTSBACK is replaced by e.g. '300 Points Back' in English",
+      "message": "You'll earn {REWARDSFIXEDPOINTSBACK}"
+   },
+   "Youll_earn_REWARDSPERCENTCASHBACK": {
+      "description": "Subtitle for coupon savings with cash back rewards. REWARDSCASHBACKPERCENT is replaced by e.g. '5% Cash Back' in English",
+      "message": "You'll earn {REWARDSPERCENTCASHBACK}"
+   },
+   "Youll_earn_up_to_REWARDSFIXEDPOINTSBACK": {
+      "description": "Subtitle for coupon savings with points back rewards. REWARDSFIXEDPOINTSBACK is replaced by e.g. '300 Points Back' in English",
+      "message": "You'll earn up to {REWARDSFIXEDPOINTSBACK}"
+   },
+   "Youll_earn_up_to_REWARDSPERCENTCASHBACK": {
+      "description": "Subtitle for coupon savings with cash back rewards. REWARDSCASHBACKPERCENT is replaced by e.g. '5% Cash Back' in English",
+      "message": "You'll earn up to {REWARDSPERCENTCASHBACK}"
+   },
+   "Youll_still_earn_REWARDSFIXEDPOINTSBACK": {
+      "description": "Subtitle for coupon savings with points back rewards. REWARDSFIXEDPOINTSBACK is replaced by e.g. '300 Points Back' in English",
+      "message": "You'll still earn {REWARDSFIXEDPOINTSBACK}"
+   },
+   "Youll_still_earn_REWARDSPERCENTCASHBACK": {
+      "description": "Subtitle for coupon savings with cash back rewards. REWARDSCASHBACKPERCENT is replaced by e.g. '5% Cash Back' in English",
+      "message": "You'll still earn {REWARDSPERCENTCASHBACK}"
+   },
+   "Youll_still_earn_up_to_REWARDSFIXEDPOINTSBACK": {
+      "description": "Subtitle for coupon savings with points back rewards. REWARDSFIXEDPOINTSBACK is replaced by e.g. '300 Points Back' in English",
+      "message": "You'll still earn up to {REWARDSFIXEDPOINTSBACK}"
+   },
+   "Youll_still_earn_up_to_REWARDSPERCENTCASHBACK": {
+      "description": "Subtitle for coupon savings with cash back rewards. REWARDSCASHBACKPERCENT is replaced by e.g. '5% Cash Back' in English",
+      "message": "You'll still earn up to {REWARDSPERCENTCASHBACK}"
+   },
+   "Your_ad_blocker_is_currently_disabled_globally_across_all_sites": {
+      "description": "Adblock disabled globally description",
+      "message": "Your ad blocker is currently disabled globally across all sites. You can re-enable it at any time in settings."
+   },
+   "Your_referral_link": {
+      "description": "Prompt to share referral link",
+      "message": "Your referral link"
+   },
+   "Youre_Missing_Out_On_Rewards": {
+      "description": "Title for login for intro ad",
+      "message": "You're Missing Out On Rewards"
+   },
+   "Youre_allowing_ads_from_this_creator": {
+      "message": "You're allowing ads from this creator"
+   },
+   "Youre_ready_to_check_out": {
+      "description": "Prompt heading when no coupons were found",
+      "message": "You're ready to check out!"
+   },
+   "Youre_supporting_this_site_through_ads": {
+      "description": "Title when allowing ads on this website",
+      "message": "You're supporting this site through ads"
+   },
+   "Youve_almost_got_REWARDS": {
+      "description": "Title for the cash back offer",
+      "message": "You've almost got {REWARDS}"
+   },
+   "Youve_already_claimed_this_offer": {
+      "description": "Offer already redeemed explanation",
+      "message": "You've already claimed this offer."
+   },
+   "Youve_reached_your_daily_limit_for_using_custom_GPTs_so_weve_turned_off_PieGPT_as_your_default_for_24_hours": {
+      "description": "Notification that ChatGPT usage limit has been reached",
+      "message": "You’ve reached your daily limit for using custom GPTs, so we’ve turned off PieGPT as your default for 24 hours."
+   },
+   "Youve_snoozed_Pie_Offers": {
+      "description": "Title for the snoozed Pie Offers",
+      "message": "You've snoozed Pie Offers"
+   },
+   "account": {
+      "description": "Generic account",
+      "message": "account"
+   },
+   "allowing_ads": {
+      "description": "Link text to opt-in to allowing ads",
+      "message": "allowing ads"
+   },
+   "and_earn_REWARDSFIXEDPOINTSBACK": {
+      "description": "Subtitle for coupon savings with points back rewards. REWARDSFIXEDPOINTSBACK is replaced by e.g. '300 Points Back' in English",
+      "message": "and earn {REWARDSFIXEDPOINTSBACK}"
+   },
+   "and_earn_REWARDSPERCENTCASHBACK": {
+      "description": "Subtitle for coupon savings with cash back rewards. REWARDSCASHBACKPERCENT is replaced by e.g. '5% Cash Back' in English",
+      "message": "and earn {REWARDSPERCENTCASHBACK}"
+   },
+   "and_earn_up_to_REWARDSFIXEDPOINTSBACK": {
+      "description": "Subtitle for coupon savings with points back rewards. REWARDSFIXEDPOINTSBACK is replaced by e.g. '300 Points Back' in English",
+      "message": "and earn up to {REWARDSFIXEDPOINTSBACK}"
+   },
+   "and_earn_up_to_REWARDSPERCENTCASHBACK": {
+      "description": "Subtitle for coupon savings with cash back rewards. REWARDSCASHBACKPERCENT is replaced by e.g. '5% Cash Back' in English",
+      "message": "and earn up to {REWARDSPERCENTCASHBACK}"
+   },
+   "enabled": {
+      "description": "When something is enabled",
+      "message": "enabled"
+   },
+   "full_exclusions": {
+      "message": "full exclusions"
+   },
+   "here": {
+      "description": "Text for link substitution",
+      "message": "here"
+   },
+   "in_Pie_Rewards": {
+      "description": "Subtitle for rewards",
+      "message": "in Pie Rewards"
+   },
+   "in_order_to_automatically_apply_coupons_and_activate_rewards": {
+      "description": "explanation of auto-coupons",
+      "message": "in order to automatically apply coupons and activate rewards"
+   },
+   "on_this_purchase_via_partnership_with_MERCHANT": {
+      "description": "Embedded cash back message for specific merchant",
+      "message": "on this purchase via our partnership with {MERCHANT}."
+   },
+   "partner_site": {
+      "description": "Partner site",
+      "message": "partner site"
+   },
+   "paused": {
+      "description": "When something is paused",
+      "message": "paused"
+   },
+   "purchase": {
+      "description": "Bolded text for key REWARDS_if_you_make_a_qualifying_PURCHASE",
+      "message": "purchase."
+   },
+   "space_saved": {
+      "description": "Detect ads popup stats",
+      "message": "space saved!"
+   },
+   "temporarily_enabled": {
+      "description": "When something is temporarily enabled",
+      "message": "temporarily enabled"
+   },
+   "up_to": {
+      "description": "prefixes rewards rates that may be lower than the given percentage (e.g. up to 5% back)",
+      "message": "up to"
+   },
+   "visiting": {
+      "description": "Bolded text for POINTS_earned_for_VISITING_this_partner_site",
+      "message": "visiting"
+   }
+}

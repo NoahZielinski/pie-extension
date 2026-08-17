@@ -1,0 +1,108 @@
+{
+   "action": {
+      "default_popup": "popover.html",
+      "default_title": "__MSG_ADBLOCKER_EXTENSION_NAME__"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "contentCheckAdblock.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": false,
+      "js": [ "contentDetectAds.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "contentScriptStarted.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "contentAdblockEmbeddedUI.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": false,
+      "js": [ "contentDetectYoutubeError.js" ],
+      "matches": [ "*://*.youtube.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": false,
+      "js": [ "contentDetectTwitchAds.js" ],
+      "matches": [ "*://*.twitch.tv/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": false,
+      "js": [ "contentUnblockAds.js" ],
+      "matches": [ "*://www.youtube.com/*", "*://*.twitch.tv/*" ]
+   }, {
+      "all_frames": false,
+      "js": [ "contentAdblockVideoPlayerUI.js" ],
+      "matches": [ "*://www.youtube.com/*", "*://*.twitch.tv/*" ]
+   } ],
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "default",
+         "path": "adblock-rulesets/chrome-only/default-oisd-big.json"
+      }, {
+         "enabled": true,
+         "id": "default-pie-custom",
+         "path": "adblock-rulesets/remote-filters/default-pie-custom.json"
+      }, {
+         "enabled": true,
+         "id": "affiliate-allowlist",
+         "path": "adblock-rulesets/main/affiliate-allowlist.json"
+      }, {
+         "enabled": true,
+         "id": "annoyances-cookies",
+         "path": "adblock-rulesets/annoyances-cookies/annoyances-cookies.json"
+      }, {
+         "enabled": true,
+         "id": "default-pie-domain",
+         "path": "adblock-rulesets/main/default-pie-domain.json"
+      }, {
+         "enabled": true,
+         "id": "ubo-redirect",
+         "path": "adblock-rulesets/main/ubo-redirect.json"
+      }, {
+         "enabled": true,
+         "id": "adm-allowlist",
+         "path": "adblock-rulesets/chrome-only/admiral.json"
+      } ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_ADBLOCKER_EXTENSION_DESCRIPTION__",
+   "externally_connectable": {
+      "accepts_tls_channel_id": false,
+      "ids": [ "nfadicbbecgbdbgbibgflooojfbolpgk" ],
+      "matches": [ "https://pie.org/*", "https://www.pie.org/*" ]
+   },
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "assets/icons/adblock/active/icon128.png",
+      "16": "assets/icons/adblock/active/icon16.png",
+      "32": "assets/icons/adblock/inactive/icon32.png",
+      "48": "assets/icons/adblock/active/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgZRK5ZYXYl9snaIFKmU8lU0iYeBPAijV3SdKsr4GtuscEJ5/7dVtxnxPynmcGRVptsSvCIYS0CYg0K82SnHRTRZgfORL4wi/X+4lR9h2AsuV+ArzU5eZYd6J3SG3tT3DnqHLT/xamofx8qh2ax6W/Cm0rvrMMBK4S/FBp8N0w/qaNLXFx/BjPBYoK0f+G63qzhX92XeJvYhxoNTKs/J1bWRbeaCtFgMHhejcIolaqWVNyD3+KKyDruv6LpAZcMid+GCnb9XRCVS7jFa2fPThgpf+IQr/nBlYzZs9DgzQshHsf3C7L67YJ4kfNAGFv5ixrxdy7u6rqEf3oPSEUM2dUwIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_ADBLOCKER_EXTENSION_NAME__",
+   "options_page": "options.html",
+   "permissions": [ "alarms", "cookies", "tabs", "storage", "scripting", "webNavigation", "unlimitedStorage", "declarativeNetRequestWithHostAccess", "declarativeNetRequestFeedback", "webRequest", "management", "offscreen" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.33.8",
+   "web_accessible_resources": [ {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "assets/page/*" ]
+   }, {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "/web_accessible_resources/noop.txt", "/web_accessible_resources/noop.js", "/web_accessible_resources/noop-1s.mp4", "/web_accessible_resources/noop.css", "/web_accessible_resources/2x2.png", "/web_accessible_resources/32x32.png", "/web_accessible_resources/1x1.gif", "/web_accessible_resources/empty", "/web_accessible_resources/nofab.js", "/web_accessible_resources/hd-main.js", "/web_accessible_resources/google-ima.js", "/web_accessible_resources/popads.js", "/web_accessible_resources/google-analytics_analytics.js", "/web_accessible_resources/googlesyndication_adsbygoogle.js", "/web_accessible_resources/amazon_apstag.js", "/web_accessible_resources/amazon-apstag.js", "/web_accessible_resources/doubleclick_instream_ad_status.js", "/web_accessible_resources/google-analytics_cx_api.js", "/web_accessible_resources/googletagservices_gpt.js", "/web_accessible_resources/scorecardresearch_beacon.js", "/web_accessible_resources/google-analytics_ga.js", "/web_accessible_resources/outbrain-widget.js", "/web_accessible_resources/fingerprint2.js", "/web_accessible_resources/amazon_ads.js", "/web_accessible_resources/chartbeat.js", "/web_accessible_resources/noop-vmap1.0.xml", "/web_accessible_resources/noop-0.1s.mp3", "/web_accessible_resources/noop.html", "/web_accessible_resources/nobab2.js", "/web_accessible_resources/click2load.html", "/web_accessible_resources/noeval-silent.js", "/assets/icons/active/icon48.png" ],
+      "use_dynamic_url": true
+   } ]
+}

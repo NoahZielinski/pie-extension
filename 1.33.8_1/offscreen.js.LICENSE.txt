@@ -1,0 +1,3902 @@
+/*!
+ * jQuery JavaScript Library v3.7.1
+ * https://jquery.com/
+ *
+ * Copyright OpenJS Foundation and other contributors
+ * Released under the MIT license
+ * https://jquery.org/license
+ *
+ * Date: 2023-08-28T13:37Z
+ */
+
+/*! . */
+
+/*! ../../../core */
+
+/*! ../../../lazy */
+
+/*! ../../../query */
+
+/*! ../../../types */
+
+/*! ../../../util */
+
+/*! ../../_predicates */
+
+/*! ../../accumulator/first */
+
+/*! ../../accumulator/firstN */
+
+/*! ../../accumulator/last */
+
+/*! ../../accumulator/lastN */
+
+/*! ../../accumulator/maxN */
+
+/*! ../../accumulator/minN */
+
+/*! ../../aggregator */
+
+/*! ../../audiences */
+
+/*! ../../core */
+
+/*! ../../doc-cache.js */
+
+/*! ../../hooks.js */
+
+/*! ../../incremental-write.js */
+
+/*! ../../lazy */
+
+/*! ../../operators/expression/boolean */
+
+/*! ../../operators/expression/comparison */
+
+/*! ../../operators/query */
+
+/*! ../../overwritable.js */
+
+/*! ../../pipeline/sort */
+
+/*! ../../plugin-helpers.js */
+
+/*! ../../plugin.js */
+
+/*! ../../plugins/shared/version-check.js */
+
+/*! ../../plugins/utils/index.js */
+
+/*! ../../query */
+
+/*! ../../replication-protocol/index.js */
+
+/*! ../../rx-change-event.js */
+
+/*! ../../rx-database-internal-store.js */
+
+/*! ../../rx-database.js */
+
+/*! ../../rx-document.js */
+
+/*! ../../rx-error.js */
+
+/*! ../../rx-query-helper.js */
+
+/*! ../../rx-schema-helper.js */
+
+/*! ../../rx-storage-helper.js */
+
+/*! ../../rx-storage-multiinstance.js */
+
+/*! ../../types */
+
+/*! ../../util */
+
+/*! ../../utils/constants */
+
+/*! ../../utils/error */
+
+/*! ../../utils/mutex */
+
+/*! ../../utils/opfs */
+
+/*! ../../utils/promise */
+
+/*! ../../utils/replication */
+
+/*! ../../utils/time */
+
+/*! ../../utils/url */
+
+/*! ../Observable */
+
+/*! ../ReplaySubject */
+
+/*! ../Subject */
+
+/*! ../Subscriber */
+
+/*! ../accumulator */
+
+/*! ../accumulator/median */
+
+/*! ../accumulator/percentile */
+
+/*! ../accumulator/push */
+
+/*! ../collections */
+
+/*! ../config */
+
+/*! ../core */
+
+/*! ../date/dateToString */
+
+/*! ../encryption */
+
+/*! ../expression */
+
+/*! ../expression/array/slice */
+
+/*! ../expression/conditional/ifNull */
+
+/*! ../expression/custom/function */
+
+/*! ../expression/date/_internal */
+
+/*! ../expression/date/dateAdd */
+
+/*! ../expression/object/mergeObjects */
+
+/*! ../leader-election/index.js */
+
+/*! ../observable/concat */
+
+/*! ../observable/from */
+
+/*! ../observable/innerFrom */
+
+/*! ../operators/OperatorSubscriber */
+
+/*! ../operators/concatAll */
+
+/*! ../operators/expression/boolean */
+
+/*! ../operators/expression/comparison */
+
+/*! ../operators/map */
+
+/*! ../operators/mergeAll */
+
+/*! ../operators/observeOn */
+
+/*! ../operators/pipeline */
+
+/*! ../operators/projection */
+
+/*! ../operators/query */
+
+/*! ../operators/subscribeOn */
+
+/*! ../options.js */
+
+/*! ../pipeline/_internal */
+
+/*! ../pipeline/sort */
+
+/*! ../plugins/attachments/index.js */
+
+/*! ../plugins/utils/index.js */
+
+/*! ../query */
+
+/*! ../replication/index.js */
+
+/*! ../rx-error.js */
+
+/*! ../rx-schema-helper.js */
+
+/*! ../rx-storage-helper.js */
+
+/*! ../scheduled/scheduled */
+
+/*! ../scheduler/timeoutProvider */
+
+/*! ../shared/index-helpers.js */
+
+/*! ../shared/index.js */
+
+/*! ../shared/rxdb-premium-version.js */
+
+/*! ../states/index.js */
+
+/*! ../symbol/iterator */
+
+/*! ../symbol/observable */
+
+/*! ../util */
+
+/*! ../util.js */
+
+/*! ../util/args */
+
+/*! ../util/argsArgArrayOrObject */
+
+/*! ../util/argsOrArgArray */
+
+/*! ../util/createObject */
+
+/*! ../util/executeSchedule */
+
+/*! ../util/identity */
+
+/*! ../util/isArrayLike */
+
+/*! ../util/isAsyncIterable */
+
+/*! ../util/isFunction */
+
+/*! ../util/isInteropObservable */
+
+/*! ../util/isIterable */
+
+/*! ../util/isPromise */
+
+/*! ../util/isReadableStreamLike */
+
+/*! ../util/lift */
+
+/*! ../util/mapOneOrManyArgs */
+
+/*! ../util/reportUnhandledError */
+
+/*! ../util/throwUnobservableError */
+
+/*! ../utils/index.js */
+
+/*! ../utils/promise */
+
+/*! ../utils/time */
+
+/*! ../utils/url */
+
+/*! ../window/linearFill */
+
+/*! ../window/locf */
+
+/*! ./NotificationFactories */
+
+/*! ./Observable */
+
+/*! ./OperatorSubscriber */
+
+/*! ./Subject */
+
+/*! ./Subscriber */
+
+/*! ./Subscription */
+
+/*! ./_internal */
+
+/*! ./abs */
+
+/*! ./accumulator */
+
+/*! ./acos */
+
+/*! ./acosh */
+
+/*! ./action-functions.js */
+
+/*! ./actions/index.js */
+
+/*! ./add */
+
+/*! ./addFields */
+
+/*! ./addToSet */
+
+/*! ./aggregator */
+
+/*! ./all */
+
+/*! ./allElementsTrue */
+
+/*! ./alpha */
+
+/*! ./and */
+
+/*! ./anyElementTrue */
+
+/*! ./arithmetic */
+
+/*! ./array */
+
+/*! ./arrayElemAt */
+
+/*! ./arrayToObject */
+
+/*! ./asin */
+
+/*! ./asinh */
+
+/*! ./atan */
+
+/*! ./atan2 */
+
+/*! ./atanh */
+
+/*! ./attribute */
+
+/*! ./audienceEvaluator */
+
+/*! ./audienceRuleDefinition */
+
+/*! ./audiences */
+
+/*! ./avg */
+
+/*! ./bdd/bdd.generated.js */
+
+/*! ./bit */
+
+/*! ./bitAnd */
+
+/*! ./bitNot */
+
+/*! ./bitOr */
+
+/*! ./bitXor */
+
+/*! ./bitsAllClear */
+
+/*! ./bitsAllSet */
+
+/*! ./bitsAnyClear */
+
+/*! ./bitsAnySet */
+
+/*! ./bitwise */
+
+/*! ./blacklist */
+
+/*! ./boolean */
+
+/*! ./bottom */
+
+/*! ./bottomN */
+
+/*! ./browser.js */
+
+/*! ./bucket */
+
+/*! ./bucketAuto */
+
+/*! ./ceil */
+
+/*! ./change-event-buffer.js */
+
+/*! ./checkpoint.js */
+
+/*! ./cleanup-helper.js */
+
+/*! ./cleanup-state.js */
+
+/*! ./cleanup.js */
+
+/*! ./cmp */
+
+/*! ./collections */
+
+/*! ./collections/sessionConfigs */
+
+/*! ./comparison */
+
+/*! ./compress */
+
+/*! ./concat */
+
+/*! ./concatArrays */
+
+/*! ./cond */
+
+/*! ./conditional */
+
+/*! ./config */
+
+/*! ./conflicts.js */
+
+/*! ./constants */
+
+/*! ./construct.js */
+
+/*! ./convert */
+
+/*! ./core */
+
+/*! ./cos */
+
+/*! ./cosh */
+
+/*! ./count */
+
+/*! ./covariancePop */
+
+/*! ./covarianceSamp */
+
+/*! ./createErrorClass */
+
+/*! ./currentDate */
+
+/*! ./cursor */
+
+/*! ./custom */
+
+/*! ./database */
+
+/*! ./date */
+
+/*! ./dateAdd */
+
+/*! ./dateDiff */
+
+/*! ./dateFromParts */
+
+/*! ./dateFromString */
+
+/*! ./dateSubtract */
+
+/*! ./dateToParts */
+
+/*! ./dateToString */
+
+/*! ./dateTrunc */
+
+/*! ./dayOfMonth */
+
+/*! ./dayOfWeek */
+
+/*! ./dayOfYear */
+
+/*! ./default-conflict-handler.js */
+
+/*! ./degreesToRadians */
+
+/*! ./densify */
+
+/*! ./divide */
+
+/*! ./doc-cache.js */
+
+/*! ./downstream.js */
+
+/*! ./dynamicScore */
+
+/*! ./elemMatch */
+
+/*! ./element */
+
+/*! ./empty */
+
+/*! ./eq */
+
+/*! ./evaluation */
+
+/*! ./event-reduce.js */
+
+/*! ./exists */
+
+/*! ./exp */
+
+/*! ./expr */
+
+/*! ./extensionsInstalled */
+
+/*! ./facet */
+
+/*! ./fill */
+
+/*! ./filter */
+
+/*! ./first */
+
+/*! ./firstN */
+
+/*! ./floor */
+
+/*! ./from */
+
+/*! ./function */
+
+/*! ./getField */
+
+/*! ./getPrototypeOf.js */
+
+/*! ./graphLookup */
+
+/*! ./group */
+
+/*! ./gt */
+
+/*! ./gte */
+
+/*! ./helper.js */
+
+/*! ./helpers */
+
+/*! ./hooks.js */
+
+/*! ./hour */
+
+/*! ./identity */
+
+/*! ./ifNull */
+
+/*! ./in */
+
+/*! ./inc */
+
+/*! ./incremental-write.js */
+
+/*! ./indexOfArray */
+
+/*! ./indexOfBytes */
+
+/*! ./indexeddb-bulk-write.js */
+
+/*! ./indexeddb-find-by-ids.js */
+
+/*! ./indexeddb-helpers.js */
+
+/*! ./indexeddb-index-helpers.js */
+
+/*! ./indexeddb-query.js */
+
+/*! ./indexeddb-storage-instance.js */
+
+/*! ./init/basic */
+
+/*! ./innerFrom */
+
+/*! ./isArray */
+
+/*! ./isBase64 */
+
+/*! ./isByteLength */
+
+/*! ./isDate */
+
+/*! ./isEmail */
+
+/*! ./isFQDN */
+
+/*! ./isFloat */
+
+/*! ./isFullWidth */
+
+/*! ./isFunction */
+
+/*! ./isHalfWidth */
+
+/*! ./isHexadecimal */
+
+/*! ./isIP */
+
+/*! ./isISO31661Alpha2 */
+
+/*! ./isInt */
+
+/*! ./isLuhnNumber */
+
+/*! ./isNativeFunction.js */
+
+/*! ./isNativeReflectConstruct.js */
+
+/*! ./isNumber */
+
+/*! ./isScheduler */
+
+/*! ./isoDayOfWeek */
+
+/*! ./isoWeek */
+
+/*! ./isoWeekYear */
+
+/*! ./jsonSchema */
+
+/*! ./last */
+
+/*! ./lastN */
+
+/*! ./lazy */
+
+/*! ./leader-election-util.js */
+
+/*! ./leader-election-web-lock.js */
+
+/*! ./let */
+
+/*! ./lib/blacklist */
+
+/*! ./lib/contains */
+
+/*! ./lib/equals */
+
+/*! ./lib/escape */
+
+/*! ./lib/isAbaRouting */
+
+/*! ./lib/isAfter */
+
+/*! ./lib/isAlpha */
+
+/*! ./lib/isAlphanumeric */
+
+/*! ./lib/isAscii */
+
+/*! ./lib/isBIC */
+
+/*! ./lib/isBase32 */
+
+/*! ./lib/isBase58 */
+
+/*! ./lib/isBase64 */
+
+/*! ./lib/isBefore */
+
+/*! ./lib/isBoolean */
+
+/*! ./lib/isBtcAddress */
+
+/*! ./lib/isByteLength */
+
+/*! ./lib/isCreditCard */
+
+/*! ./lib/isCurrency */
+
+/*! ./lib/isDataURI */
+
+/*! ./lib/isDate */
+
+/*! ./lib/isDecimal */
+
+/*! ./lib/isDivisibleBy */
+
+/*! ./lib/isEAN */
+
+/*! ./lib/isEmail */
+
+/*! ./lib/isEmpty */
+
+/*! ./lib/isEthereumAddress */
+
+/*! ./lib/isFQDN */
+
+/*! ./lib/isFloat */
+
+/*! ./lib/isFullWidth */
+
+/*! ./lib/isHSL */
+
+/*! ./lib/isHalfWidth */
+
+/*! ./lib/isHash */
+
+/*! ./lib/isHexColor */
+
+/*! ./lib/isHexadecimal */
+
+/*! ./lib/isIBAN */
+
+/*! ./lib/isIMEI */
+
+/*! ./lib/isIP */
+
+/*! ./lib/isIPRange */
+
+/*! ./lib/isISBN */
+
+/*! ./lib/isISIN */
+
+/*! ./lib/isISO31661Alpha2 */
+
+/*! ./lib/isISO31661Alpha3 */
+
+/*! ./lib/isISO4217 */
+
+/*! ./lib/isISO6346 */
+
+/*! ./lib/isISO6391 */
+
+/*! ./lib/isISO8601 */
+
+/*! ./lib/isISRC */
+
+/*! ./lib/isISSN */
+
+/*! ./lib/isIdentityCard */
+
+/*! ./lib/isIn */
+
+/*! ./lib/isInt */
+
+/*! ./lib/isJSON */
+
+/*! ./lib/isJWT */
+
+/*! ./lib/isLatLong */
+
+/*! ./lib/isLength */
+
+/*! ./lib/isLicensePlate */
+
+/*! ./lib/isLocale */
+
+/*! ./lib/isLowercase */
+
+/*! ./lib/isLuhnNumber */
+
+/*! ./lib/isMACAddress */
+
+/*! ./lib/isMD5 */
+
+/*! ./lib/isMagnetURI */
+
+/*! ./lib/isMailtoURI */
+
+/*! ./lib/isMimeType */
+
+/*! ./lib/isMobilePhone */
+
+/*! ./lib/isMongoId */
+
+/*! ./lib/isMultibyte */
+
+/*! ./lib/isNumeric */
+
+/*! ./lib/isOctal */
+
+/*! ./lib/isPassportNumber */
+
+/*! ./lib/isPort */
+
+/*! ./lib/isPostalCode */
+
+/*! ./lib/isRFC3339 */
+
+/*! ./lib/isRgbColor */
+
+/*! ./lib/isSemVer */
+
+/*! ./lib/isSlug */
+
+/*! ./lib/isStrongPassword */
+
+/*! ./lib/isSurrogatePair */
+
+/*! ./lib/isTaxID */
+
+/*! ./lib/isTime */
+
+/*! ./lib/isURL */
+
+/*! ./lib/isUUID */
+
+/*! ./lib/isUppercase */
+
+/*! ./lib/isVAT */
+
+/*! ./lib/isVariableWidth */
+
+/*! ./lib/isWhitelisted */
+
+/*! ./lib/ltrim */
+
+/*! ./lib/matches */
+
+/*! ./lib/normalizeEmail */
+
+/*! ./lib/rtrim */
+
+/*! ./lib/stripLow */
+
+/*! ./lib/toBoolean */
+
+/*! ./lib/toDate */
+
+/*! ./lib/toFloat */
+
+/*! ./lib/toInt */
+
+/*! ./lib/trim */
+
+/*! ./lib/unescape */
+
+/*! ./lib/whitelist */
+
+/*! ./limit */
+
+/*! ./literal */
+
+/*! ./ln */
+
+/*! ./local-documents-helper.js */
+
+/*! ./local-documents.js */
+
+/*! ./log */
+
+/*! ./log10 */
+
+/*! ./logical */
+
+/*! ./lookup */
+
+/*! ./lt */
+
+/*! ./lte */
+
+/*! ./ltrim */
+
+/*! ./map */
+
+/*! ./match */
+
+/*! ./max */
+
+/*! ./maxN */
+
+/*! ./median */
+
+/*! ./merge */
+
+/*! ./mergeAll */
+
+/*! ./mergeInternals */
+
+/*! ./mergeMap */
+
+/*! ./mergeObjects */
+
+/*! ./message-channel-cache.js */
+
+/*! ./meta-instance.js */
+
+/*! ./method-chooser.js */
+
+/*! ./methods/indexed-db.js */
+
+/*! ./methods/localstorage.js */
+
+/*! ./methods/native.js */
+
+/*! ./methods/simulate.js */
+
+/*! ./millisecond */
+
+/*! ./min */
+
+/*! ./minN */
+
+/*! ./minute */
+
+/*! ./misc */
+
+/*! ./mod */
+
+/*! ./month */
+
+/*! ./mul */
+
+/*! ./multiply */
+
+/*! ./native.js */
+
+/*! ./ne */
+
+/*! ./nin */
+
+/*! ./node.js */
+
+/*! ./nor */
+
+/*! ./not */
+
+/*! ./object */
+
+/*! ./objectToArray */
+
+/*! ./operators/pipeline/limit */
+
+/*! ./operators/pipeline/project */
+
+/*! ./operators/pipeline/skip */
+
+/*! ./operators/pipeline/sort */
+
+/*! ./operators/update */
+
+/*! ./operators/update/_internal */
+
+/*! ./options.js */
+
+/*! ./or */
+
+/*! ./out */
+
+/*! ./overwritable.js */
+
+/*! ./pages */
+
+/*! ./percentile */
+
+/*! ./pie */
+
+/*! ./placements */
+
+/*! ./placementsEvaluator */
+
+/*! ./plugins/utils/index.js */
+
+/*! ./polyfill */
+
+/*! ./pop */
+
+/*! ./pow */
+
+/*! ./project */
+
+/*! ./promise */
+
+/*! ./pull */
+
+/*! ./pullAll */
+
+/*! ./push */
+
+/*! ./query */
+
+/*! ./query-cache.js */
+
+/*! ./query-planner.js */
+
+/*! ./radiansToDegrees */
+
+/*! ./rand */
+
+/*! ./range */
+
+/*! ./rawQueryRuleDefinition */
+
+/*! ./redact */
+
+/*! ./reduce */
+
+/*! ./regex */
+
+/*! ./regex.js */
+
+/*! ./regexFind */
+
+/*! ./regexFindAll */
+
+/*! ./regexMatch */
+
+/*! ./rename */
+
+/*! ./replaceAll */
+
+/*! ./replaceOne */
+
+/*! ./replaceRoot */
+
+/*! ./replaceWith */
+
+/*! ./replication-helper.js */
+
+/*! ./replication-protocol/default-conflict-handler.js */
+
+/*! ./retargeting */
+
+/*! ./reverseArray */
+
+/*! ./rng.js */
+
+/*! ./round */
+
+/*! ./rtrim */
+
+/*! ./ruleDefinitions */
+
+/*! ./rx-change-event.js */
+
+/*! ./rx-collection-helper.js */
+
+/*! ./rx-collection.js */
+
+/*! ./rx-database-internal-store.js */
+
+/*! ./rx-database.js */
+
+/*! ./rx-document-prototype-merge.js */
+
+/*! ./rx-document.js */
+
+/*! ./rx-error.js */
+
+/*! ./rx-local-document.js */
+
+/*! ./rx-query-helper.js */
+
+/*! ./rx-query-mingo.js */
+
+/*! ./rx-query-single-result.js */
+
+/*! ./rx-query.js */
+
+/*! ./rx-schema-helper.js */
+
+/*! ./rx-schema.js */
+
+/*! ./rx-storage-helper.js */
+
+/*! ./rxdb-premium-version.js */
+
+/*! ./sample */
+
+/*! ./sampleRate */
+
+/*! ./scan */
+
+/*! ./scheduleArray */
+
+/*! ./scheduleAsyncIterable */
+
+/*! ./scheduleIterable */
+
+/*! ./scheduleObservable */
+
+/*! ./schedulePromise */
+
+/*! ./scheduleReadableStreamLike */
+
+/*! ./scheduler/dateTimestampProvider */
+
+/*! ./scheduler/timeoutProvider */
+
+/*! ./searchProviders */
+
+/*! ./searchQueries */
+
+/*! ./searches */
+
+/*! ./second */
+
+/*! ./sessionConfigs */
+
+/*! ./sessions */
+
+/*! ./set */
+
+/*! ./setDifference */
+
+/*! ./setEquals */
+
+/*! ./setField */
+
+/*! ./setIntersection */
+
+/*! ./setIsSubset */
+
+/*! ./setPrototypeOf.js */
+
+/*! ./setUnion */
+
+/*! ./setWindowFields */
+
+/*! ./share */
+
+/*! ./sin */
+
+/*! ./sinh */
+
+/*! ./siteSessions */
+
+/*! ./siteVisits */
+
+/*! ./size */
+
+/*! ./skip */
+
+/*! ./slice */
+
+/*! ./sort */
+
+/*! ./sortArray */
+
+/*! ./sortByCount */
+
+/*! ./split */
+
+/*! ./sqrt */
+
+/*! ./state-resolver.js */
+
+/*! ./states/index.js */
+
+/*! ./stdDevPop */
+
+/*! ./stdDevSamp */
+
+/*! ./strLenBytes */
+
+/*! ./strLenCP */
+
+/*! ./strcasecmp */
+
+/*! ./string */
+
+/*! ./string-format.js */
+
+/*! ./stringify.js */
+
+/*! ./substr */
+
+/*! ./substrBytes */
+
+/*! ./substrCP */
+
+/*! ./subtract */
+
+/*! ./sum */
+
+/*! ./switch */
+
+/*! ./symbol/observable */
+
+/*! ./tan */
+
+/*! ./toBool */
+
+/*! ./toDate */
+
+/*! ./toDecimal */
+
+/*! ./toDouble */
+
+/*! ./toFloat */
+
+/*! ./toInt */
+
+/*! ./toLong */
+
+/*! ./toLower */
+
+/*! ./toPrimitive.js */
+
+/*! ./toPropertyKey.js */
+
+/*! ./toString */
+
+/*! ./toUpper */
+
+/*! ./top */
+
+/*! ./topN */
+
+/*! ./trignometry */
+
+/*! ./trim */
+
+/*! ./trunc */
+
+/*! ./type */
+
+/*! ./typeof.js */
+
+/*! ./unionWith */
+
+/*! ./unset */
+
+/*! ./unsetField */
+
+/*! ./unwind */
+
+/*! ./updater */
+
+/*! ./upstream.js */
+
+/*! ./user */
+
+/*! ./userAudiences */
+
+/*! ./util */
+
+/*! ./util.js */
+
+/*! ./util/EmptyError */
+
+/*! ./util/ObjectUnsubscribedError */
+
+/*! ./util/UnsubscriptionError */
+
+/*! ./util/algorithms */
+
+/*! ./util/arrRemove */
+
+/*! ./util/assertString */
+
+/*! ./util/errorContext */
+
+/*! ./util/includes */
+
+/*! ./util/isFunction */
+
+/*! ./util/merge */
+
+/*! ./util/multilineRegex */
+
+/*! ./util/noop */
+
+/*! ./util/pipe */
+
+/*! ./util/reportUnhandledError */
+
+/*! ./util/toString */
+
+/*! ./utils */
+
+/*! ./utils-global.js */
+
+/*! ./utils-hash.js */
+
+/*! ./utils-object.js */
+
+/*! ./utils-promise.js */
+
+/*! ./utils-string.js */
+
+/*! ./validate.js */
+
+/*! ./validator */
+
+/*! ./variable */
+
+/*! ./week */
+
+/*! ./where */
+
+/*! ./wrapper */
+
+/*! ./year */
+
+/*! ./zip */
+
+/*! @babel/runtime/helpers/createClass */
+
+/*! @babel/runtime/helpers/inheritsLoose */
+
+/*! @babel/runtime/helpers/readOnlyError */
+
+/*! @babel/runtime/helpers/wrapNativeSuper */
+
+/*! array-push-at-sort-position */
+
+/*! binary-decision-diagram */
+
+/*! broadcast-channel */
+
+/*! custom-idle-queue */
+
+/*! event-reduce-js */
+
+/*! jquery */
+
+/*! jsonschema */
+
+/*! jsonschema-key-compression */
+
+/*! lodash.debounce */
+
+/*! mingo */
+
+/*! mingo/core */
+
+/*! mingo/operators/accumulator */
+
+/*! mingo/operators/pipeline */
+
+/*! mingo/operators/query/array */
+
+/*! mingo/operators/query/comparison */
+
+/*! mingo/operators/query/element */
+
+/*! mingo/operators/query/evaluation */
+
+/*! mingo/operators/query/logical */
+
+/*! mingo/query */
+
+/*! mingo/util */
+
+/*! oblivious-set */
+
+/*! rxdb */
+
+/*! rxdb-premium/plugins/storage-indexeddb */
+
+/*! rxdb-premium/plugins/storage-worker */
+
+/*! rxdb/plugins/cleanup */
+
+/*! rxdb/plugins/core */
+
+/*! rxdb/plugins/key-compression */
+
+/*! rxdb/plugins/leader-election */
+
+/*! rxdb/plugins/local-documents */
+
+/*! rxdb/plugins/storage-remote */
+
+/*! rxdb/plugins/utils */
+
+/*! rxjs */
+
+/*! rxjs/operators */
+
+/*! tslib */
+
+/*! unload */
+
+/*! uuid */
+
+/*! validator */
+
+/*! web-worker */
+
+/*!**********************!*\
+  !*** ./src/index.ts ***!
+  \**********************/
+
+/*!*************************!*\
+  !*** ./src/polyfill.ts ***!
+  \*************************/
+
+/*!**************************!*\
+  !*** ./src/utils/url.ts ***!
+  \**************************/
+
+/*!***************************!*\
+  !*** ./src/utils/opfs.ts ***!
+  \***************************/
+
+/*!***************************!*\
+  !*** ./src/utils/time.ts ***!
+  \***************************/
+
+/*!****************************!*\
+  !*** ./src/utils/error.ts ***!
+  \****************************/
+
+/*!****************************!*\
+  !*** ./src/utils/index.ts ***!
+  \****************************/
+
+/*!****************************!*\
+  !*** ./src/utils/mutex.ts ***!
+  \****************************/
+
+/*!*****************************!*\
+  !*** ./src/database/pie.ts ***!
+  \*****************************/
+
+/*!******************************!*\
+  !*** ./src/utils/promise.ts ***!
+  \******************************/
+
+/*!*******************************!*\
+  !*** ./src/database/index.ts ***!
+  \*******************************/
+
+/*!********************************!*\
+  !*** ./src/audiences/index.ts ***!
+  \********************************/
+
+/*!********************************!*\
+  !*** ./src/utils/constants.ts ***!
+  \********************************/
+
+/*!*********************************!*\
+  !*** ./src/placements/index.ts ***!
+  \*********************************/
+
+/*!**********************************!*\
+  !*** ./src/utils/replication.ts ***!
+  \**********************************/
+
+/*!***********************************!*\
+  !*** ./src/database/user/user.ts ***!
+  \***********************************/
+
+/*!************************************!*\
+  !*** ./src/database/encryption.ts ***!
+  \************************************/
+
+/*!************************************!*\
+  !*** ./src/database/user/index.ts ***!
+  \************************************/
+
+/*!**************************************!*\
+  !*** ./src/database/user/wrapper.ts ***!
+  \**************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/validator/index.js ***!
+  \*****************************************/
+
+/*!******************************************!*\
+  !*** ./node_modules/tslib/tslib.es6.mjs ***!
+  \******************************************/
+
+/*!*******************************************!*\
+  !*** ./src/database/collections/index.ts ***!
+  \*******************************************/
+
+/*!*******************************************!*\
+  !*** ./src/database/collections/pages.ts ***!
+  \*******************************************/
+
+/*!********************************************!*\
+  !*** ./node_modules/jquery/dist/jquery.js ***!
+  \********************************************/
+
+/*!********************************************!*\
+  !*** ./node_modules/validator/lib/isIP.js ***!
+  \********************************************/
+
+/*!********************************************!*\
+  !*** ./node_modules/validator/lib/isIn.js ***!
+  \********************************************/
+
+/*!********************************************!*\
+  !*** ./node_modules/validator/lib/trim.js ***!
+  \********************************************/
+
+/*!********************************************!*\
+  !*** ./src/audiences/audienceEvaluator.ts ***!
+  \********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/jsonschema/lib/scan.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/mingo/dist/esm/core.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/mingo/dist/esm/lazy.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/mingo/dist/esm/util.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/hooks.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/unload/dist/es/node.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/validator/lib/alpha.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/validator/lib/isBIC.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/validator/lib/isEAN.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/validator/lib/isHSL.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/validator/lib/isInt.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/validator/lib/isJWT.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/validator/lib/isMD5.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/validator/lib/isURL.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/validator/lib/isVAT.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/validator/lib/ltrim.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/validator/lib/rtrim.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/validator/lib/toInt.js ***!
+  \*********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/jsonschema/lib/index.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/mingo/dist/esm/index.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/mingo/dist/esm/query.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/mingo/dist/esm/types.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugin.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/unload/dist/es/index.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/equals.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/escape.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/isDate.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/isFQDN.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/isHash.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/isIBAN.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/isIMEI.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/isISBN.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/isISIN.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/isISRC.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/isISSN.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/isJSON.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/isPort.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/isSlug.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/isTime.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/isUUID.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/validator/lib/toDate.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./src/database/collections/searches.ts ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./src/database/collections/sessions.ts ***!
+  \**********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/lodash.debounce/index.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/mingo/dist/esm/cursor.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/validator/lib/isAfter.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/validator/lib/isAlpha.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/validator/lib/isAscii.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/validator/lib/isEmail.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/validator/lib/isEmpty.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/validator/lib/isFloat.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/validator/lib/isOctal.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/validator/lib/isTaxID.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/validator/lib/matches.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/validator/lib/toFloat.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./src/placements/placementsEvaluator.ts ***!
+  \***********************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/jsonschema/lib/helpers.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/updater.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-error.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-query.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/unload/dist/es/browser.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/validator/lib/contains.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/validator/lib/isBase32.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/validator/lib/isBase58.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/validator/lib/isBase64.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/validator/lib/isBefore.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/validator/lib/isLength.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/validator/lib/isLocale.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/validator/lib/isSemVer.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/validator/lib/stripLow.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/validator/lib/unescape.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/web-worker/cjs/browser.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./src/audiences/ruleDefinitions/index.ts ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./src/audiences/ruleDefinitions/utils.ts ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./src/database/collections/placements.ts ***!
+  \************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/doc-cache.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-schema.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/blacklist.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/isBoolean.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/isDataURI.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/isDecimal.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/isIPRange.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/isISO4217.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/isISO6346.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/isISO6391.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/isISO8601.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/isLatLong.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/isMongoId.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/isNumeric.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/isRFC3339.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/toBoolean.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/validator/lib/whitelist.js ***!
+  \*************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/jsonschema/lib/attribute.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/jsonschema/lib/validator.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-browser/v4.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/validator/lib/isCurrency.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/validator/lib/isHexColor.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/validator/lib/isMimeType.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/validator/lib/isRgbColor.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/validator/lib/util/merge.js ***!
+  \**************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/aggregator.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/init/basic.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/query-cache.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-database.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-document.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-browser/rng.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/validator/lib/isFullWidth.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/validator/lib/isHalfWidth.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/validator/lib/isLowercase.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/validator/lib/isMagnetURI.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/validator/lib/isMailtoURI.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/validator/lib/isMultibyte.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/validator/lib/isUppercase.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./src/database/collections/userAudiences.ts ***!
+  \***************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/custom-index.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/event-reduce.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/overwritable.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/validator/lib/isAbaRouting.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/validator/lib/isBtcAddress.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/validator/lib/isByteLength.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/validator/lib/isCreditCard.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/validator/lib/isLuhnNumber.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/validator/lib/isMACAddress.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/validator/lib/isPostalCode.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./src/database/collections/sessionConfigs.ts ***!
+  \****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/query-planner.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-collection.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-browser/regex.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/validator/lib/isDivisibleBy.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/validator/lib/isHexadecimal.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/validator/lib/isMobilePhone.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/validator/lib/isWhitelisted.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/validator/lib/util/includes.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/validator/lib/util/toString.js ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./src/audiences/ruleDefinitions/siteVisits.ts ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./src/database/collections/searchProviders.ts ***!
+  \*****************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugin-helpers.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-query-mingo.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-browser/native.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/validator/lib/isAlphanumeric.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/validator/lib/isIdentityCard.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/validator/lib/isLicensePlate.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/validator/lib/normalizeEmail.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./src/audiences/ruleDefinitions/retargeting.ts ***!
+  \******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-change-event.js ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-query-helper.js ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./node_modules/validator/lib/isSurrogatePair.js ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./node_modules/validator/lib/isVariableWidth.js ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./node_modules/validator/lib/util/algorithms.js ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./src/audiences/ruleDefinitions/dynamicScore.ts ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./src/audiences/ruleDefinitions/siteSessions.ts ***!
+  \*******************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-schema-helper.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/config.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-browser/validate.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/validator/lib/isISO31661Alpha2.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/validator/lib/isISO31661Alpha3.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/validator/lib/isPassportNumber.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/validator/lib/isStrongPassword.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./src/audiences/ruleDefinitions/searchQueries.ts ***!
+  \********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/custom-idle-queue/dist/es/index.js ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/incremental-write.js ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-storage-helper.js ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/Subject.js ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-browser/stringify.js ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/validator/lib/isEthereumAddress.js ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/validator/lib/util/assertString.js ***!
+  \*********************************************************/
+
+/*!**********************************************************!*\
+  !*** ./node_modules/oblivious-set/dist/esm/src/index.js ***!
+  \**********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/typeof.js ***!
+  \***********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/event-reduce-js/dist/esm/src/util.js ***!
+  \***********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/change-event-buffer.js ***!
+  \***********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/args.js ***!
+  \***********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/lift.js ***!
+  \***********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/noop.js ***!
+  \***********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/pipe.js ***!
+  \***********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/validator/lib/util/multilineRegex.js ***!
+  \***********************************************************/
+
+/*!************************************************************!*\
+  !*** ./node_modules/event-reduce-js/dist/esm/src/index.js ***!
+  \************************************************************/
+
+/*!************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-collection-helper.js ***!
+  \************************************************************/
+
+/*!************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/Observable.js ***!
+  \************************************************************/
+
+/*!************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/Subscriber.js ***!
+  \************************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/bit.js ***!
+  \*************************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/inc.js ***!
+  \*************************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/max.js ***!
+  \*************************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/min.js ***!
+  \*************************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/mul.js ***!
+  \*************************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/pop.js ***!
+  \*************************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/set.js ***!
+  \*************************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/cleanup/index.js ***!
+  \*************************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/construct.js ***!
+  \**************************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/_predicates.js ***!
+  \**************************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/index.js ***!
+  \**************************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/pull.js ***!
+  \**************************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/push.js ***!
+  \**************************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/window/locf.js ***!
+  \**************************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-query-single-result.js ***!
+  \**************************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/Subscription.js ***!
+  \**************************************************************/
+
+/*!**************************************************************!*\
+  !*** ./src/audiences/ruleDefinitions/extensionsInstalled.ts ***!
+  \**************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/broadcast-channel/dist/esbrowser/util.js ***!
+  \***************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/out.js ***!
+  \***************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/set.js ***!
+  \***************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/index.js ***!
+  \***************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/unset.js ***!
+  \***************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/cleanup/cleanup.js ***!
+  \***************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-map.js ***!
+  \***************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/ReplaySubject.js ***!
+  \***************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/map.js ***!
+  \***************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/tap.js ***!
+  \***************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/identity.js ***!
+  \***************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/createClass.js ***!
+  \****************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/toPrimitive.js ***!
+  \****************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/fill.js ***!
+  \****************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/skip.js ***!
+  \****************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/sort.js ***!
+  \****************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/rename.js ***!
+  \****************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-hash.js ***!
+  \****************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-time.js ***!
+  \****************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-storage-multiinstance.js ***!
+  \****************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/firstValueFrom.js ***!
+  \****************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/arrRemove.js ***!
+  \****************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/isPromise.js ***!
+  \****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/jsonschema-key-compression/dist/es/util.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/count.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/facet.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/group.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/index.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/limit.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/match.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/merge.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/unset.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/pullAll.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/replication/index.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-array.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-error.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-other.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-regex.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/BehaviorSubject.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/observable/from.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/merge.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/share.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/symbol/iterator.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/EmptyError.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/isFunction.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/isIterable.js ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./src/audiences/ruleDefinitions/audienceRuleDefinition.ts ***!
+  \*****************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./src/audiences/ruleDefinitions/rawQueryRuleDefinition.ts ***!
+  \*****************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/readOnlyError.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/broadcast-channel/dist/esbrowser/options.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/avg.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/max.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/min.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/sum.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/top.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/bucket.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/lookup.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/redact.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/sample.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/unwind.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/array/all.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/addToSet.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-global.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-object.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-string.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/replication-protocol/index.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-database-internal-store.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/observable/empty.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/observable/merge.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/filter.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/isArrayLike.js ***!
+  \******************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/isScheduler.js ***!
+  \******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/binary-decision-diagram/dist/esm/src/util.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/event-reduce-js/dist/esm/src/states/index.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/last.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/maxN.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/minN.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/push.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/topN.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/index.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/densify.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/project.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/projection/index.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/projection/slice.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/array/size.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/logical/or.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/_internal.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/window/_internal.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-premium.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-promise.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/replication-protocol/helper.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/rx-document-prototype-merge.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/observable/concat.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/symbol/observable.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/createObject.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/errorContext.js ***!
+  \*******************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/wrapNativeSuper.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/array-push-at-sort-position/dist/esm/index.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/event-reduce-js/dist/esm/src/actions/index.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/count.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/first.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/index.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/lastN.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/median.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/array/index.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/logical/and.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/logical/nor.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/logical/not.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/window/linearFill.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-document.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-revision.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/mergeAll.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/mergeMap.js ***!
+  \********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/isNativeFunction.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/jsonschema-key-compression/dist/es/compress.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/bottom.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/firstN.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/median.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/literal.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/_internal.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/addFields.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/unionWith.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/element/type.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/update/currentDate.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/cleanup/cleanup-state.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/key-compression/index.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/leader-election/index.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/local-documents/index.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/replication-protocol/upstream.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/concatAll.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/mergeWith.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/observeOn.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/startWith.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/switchMap.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/scheduled/scheduled.js ***!
+  \*********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/argsOrArgArray.js ***!
+  \*********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/bottomN.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/in.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/bucketAuto.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/bitwise/index.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/comparison/eq.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/comparison/gt.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/comparison/in.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/comparison/lt.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/comparison/ne.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/element/index.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/logical/index.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/cleanup/cleanup-helper.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/replication-protocol/conflicts.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/observable/innerFrom.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/executeSchedule.js ***!
+  \**********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/isAsyncIterable.js ***!
+  \**********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/jsonschema-key-compression/dist/es/decompress.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/addToSet.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/map.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/nin.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/zip.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/hour.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/week.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/year.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/misc/rand.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/set/index.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/type/type.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/graphLookup.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/replaceRoot.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/replaceWith.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/sortByCount.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/projection/elemMatch.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/comparison/gte.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/comparison/lte.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/comparison/nin.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/element/exists.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/evaluation/mod.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/replication-protocol/checkpoint.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/replication-protocol/downstream.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/NotificationFactories.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/shareReplay.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/subscribeOn.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/createErrorClass.js ***!
+  \***********************************************************************/
+
+/*!***********************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/mapOneOrManyArgs.js ***!
+  \***********************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/event-reduce-js/dist/esm/src/bdd/bdd.generated.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/_internal.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/stdDevPop.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/last.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/maxN.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/minN.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/size.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/boolean/or.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/index.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/month.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/misc/index.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/percentile.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/type/index.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/type/toInt.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/array/elemMatch.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/evaluation/expr.js ***!
+  \************************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-rxdb-version.js ***!
+  \************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/broadcast-channel/dist/esbrowser/method-chooser.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/broadcast-channel/dist/esbrowser/methods/native.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/percentile.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/stdDevSamp.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/first.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/index.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/lastN.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/range.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/slice.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/boolean/and.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/boolean/not.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/minute.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/second.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/trim.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/type/toBool.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/type/toDate.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/type/toLong.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/comparison/index.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/evaluation/index.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/evaluation/regex.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/evaluation/where.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/scheduled/scheduleArray.js ***!
+  \*************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/broadcast-channel/dist/esbrowser/leader-election.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/accumulator.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/filter.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/firstN.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/reduce.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/custom/index.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/dateAdd.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/isoWeek.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/object/index.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/set/setUnion.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/index.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/ltrim.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/rtrim.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/split.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/type/convert.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/variable/let.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/bitwise/_internal.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/replication-protocol/meta-instance.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/observable/combineLatest.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/mergeInternals.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/UnsubscriptionError.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/isInteropObservable.js ***!
+  \**************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/broadcast-channel/dist/esbrowser/methods/simulate.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/mergeObjects.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/ln.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/isArray.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/bitwise/bitOr.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/bitwise/index.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/boolean/index.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/comparison/eq.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/comparison/gt.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/comparison/lt.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/comparison/ne.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/dateDiff.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/misc/getField.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/set/setEquals.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/concat.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/substr.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/type/isNumber.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/type/toDouble.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/type/toString.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/pipeline/setWindowFields.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/bitwise/bitsAllSet.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/bitwise/bitsAnySet.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-object-dot-prop.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/scheduled/schedulePromise.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/scheduler/timeoutProvider.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/argsArgArrayOrObject.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/isReadableStreamLike.js ***!
+  \***************************************************************************/
+
+/*!***************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/reportUnhandledError.js ***!
+  \***************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/broadcast-channel/dist/esbrowser/broadcast-channel.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/event-reduce-js/dist/esm/src/states/state-resolver.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/covariancePop.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/abs.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/add.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/exp.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/log.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/mod.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/pow.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/bitwise/bitAnd.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/bitwise/bitNot.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/bitwise/bitXor.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/comparison/cmp.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/comparison/gte.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/comparison/lte.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/_internal.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/dateTrunc.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/dayOfWeek.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/dayOfYear.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/toLower.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/toUpper.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/type/_internal.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/type/toDecimal.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/variable/index.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/rxdb-premium/dist/esm/plugins/shared/index-helpers.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/rxdb-premium/dist/esm/plugins/shared/version-check.js ***!
+  \****************************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/scheduled/scheduleIterable.js ***!
+  \****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/broadcast-channel/dist/esbrowser/methods/indexed-db.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/accumulator/covarianceSamp.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/ceil.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/sqrt.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/sortArray.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/custom/function.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/dayOfMonth.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/misc/sampleRate.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/object/setField.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/set/setIsSubset.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/strLenCP.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/substrCP.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/cos.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/sin.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/tan.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/bitwise/bitsAllClear.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/bitwise/bitsAnyClear.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/attachments/attachments-utils.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/utils/utils-object-deep-equal.js ***!
+  \*****************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/throwUnobservableError.js ***!
+  \*****************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/floor.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/index.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/log10.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/round.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/trunc.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/comparison/index.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/conditional/cond.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/dateToParts.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/isoWeekYear.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/millisecond.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/_internal.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/regexFind.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/acos.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/asin.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/atan.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/cosh.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/sinh.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/query/evaluation/jsonSchema.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/replication/replication-helper.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/OperatorSubscriber.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/scheduled/scheduleObservable.js ***!
+  \******************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/util/ObjectUnsubscribedError.js ***!
+  \******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/broadcast-channel/dist/esbrowser/leader-election-util.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/broadcast-channel/dist/esbrowser/methods/localstorage.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/event-reduce-js/dist/esm/src/actions/action-functions.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/divide.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/arrayElemAt.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/bitwise/_internal.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/conditional/index.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/dateSubtract.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/dateToString.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/isoDayOfWeek.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/object/unsetField.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/set/setDifference.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/regexMatch.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/replaceAll.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/replaceOne.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/strcasecmp.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/acosh.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/asinh.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/atan2.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/atanh.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/index.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/rxdb-premium/dist/esm/plugins/storage-indexeddb/index.js ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/local-documents/local-documents.js ***!
+  \*******************************************************************************/
+
+/*!********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/concatArrays.js ***!
+  \********************************************************************************/
+
+/*!********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/indexOfArray.js ***!
+  \********************************************************************************/
+
+/*!********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/reverseArray.js ***!
+  \********************************************************************************/
+
+/*!********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/conditional/ifNull.js ***!
+  \********************************************************************************/
+
+/*!********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/conditional/switch.js ***!
+  \********************************************************************************/
+
+/*!********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/dateFromParts.js ***!
+  \********************************************************************************/
+
+/*!********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/set/anyElementTrue.js ***!
+  \********************************************************************************/
+
+/*!********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/strLenBytes.js ***!
+  \********************************************************************************/
+
+/*!********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/substrBytes.js ***!
+  \********************************************************************************/
+
+/*!********************************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/storage-remote/rx-storage-remote.js ***!
+  \********************************************************************************/
+
+/*!********************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/operators/distinctUntilChanged.js ***!
+  \********************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/multiply.js ***!
+  \*********************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/subtract.js ***!
+  \*********************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/array/arrayToObject.js ***!
+  \*********************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/date/dateFromString.js ***!
+  \*********************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/object/mergeObjects.js ***!
+  \*********************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/set/allElementsTrue.js ***!
+  \*********************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/set/setIntersection.js ***!
+  \*********************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/indexOfBytes.js ***!
+  \*********************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/string/regexFindAll.js ***!
+  \*********************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/local-documents/rx-local-document.js ***!
+  \*********************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/scheduled/scheduleAsyncIterable.js ***!
+  \*********************************************************************************/
+
+/*!*********************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/scheduler/dateTimestampProvider.js ***!
+  \*********************************************************************************/
+
+/*!**********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/arithmetic/_internal.js ***!
+  \**********************************************************************************/
+
+/*!**********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/object/objectToArray.js ***!
+  \**********************************************************************************/
+
+/*!***********************************************************************************!*\
+  !*** ./node_modules/broadcast-channel/dist/esbrowser/leader-election-web-lock.js ***!
+  \***********************************************************************************/
+
+/*!***********************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/_internal.js ***!
+  \***********************************************************************************/
+
+/*!***********************************************************************************!*\
+  !*** ./node_modules/rxdb-premium/dist/esm/plugins/shared/rxdb-premium-version.js ***!
+  \***********************************************************************************/
+
+/*!************************************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/storage-remote/message-channel-cache.js ***!
+  \************************************************************************************/
+
+/*!*************************************************************************************!*\
+  !*** ./node_modules/jsonschema-key-compression/dist/es/create-compression-table.js ***!
+  \*************************************************************************************/
+
+/*!*************************************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/replication-protocol/default-conflict-handler.js ***!
+  \*************************************************************************************/
+
+/*!**************************************************************************************!*\
+  !*** ./node_modules/rxdb/dist/esm/plugins/local-documents/local-documents-helper.js ***!
+  \**************************************************************************************/
+
+/*!**************************************************************************************!*\
+  !*** ./node_modules/rxjs/dist/esm5/internal/scheduled/scheduleReadableStreamLike.js ***!
+  \**************************************************************************************/
+
+/*!****************************************************************************************!*\
+  !*** ./node_modules/rxdb-premium/dist/esm/plugins/storage-worker/non-worker-worker.js ***!
+  \****************************************************************************************/
+
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/rxdb-premium/dist/esm/plugins/storage-indexeddb/indexeddb-query.js ***!
+  \*****************************************************************************************/
+
+/*!******************************************************************************************!*\
+  !*** ./node_modules/jsonschema-key-compression/dist/es/create-compressed-json-schema.js ***!
+  \******************************************************************************************/
+
+/*!******************************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/degreesToRadians.js ***!
+  \******************************************************************************************/
+
+/*!******************************************************************************************!*\
+  !*** ./node_modules/mingo/dist/esm/operators/expression/trignometry/radiansToDegrees.js ***!
+  \******************************************************************************************/
+
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/binary-decision-diagram/dist/esm/src/minimal-string/string-format.js ***!
+  \*******************************************************************************************/
+
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/rxdb-premium/dist/esm/plugins/storage-indexeddb/indexeddb-helpers.js ***!
+  \*******************************************************************************************/
+
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/rxdb-premium/dist/esm/plugins/storage-indexeddb/indexeddb-bulk-write.js ***!
+  \**********************************************************************************************/
+
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/rxdb-premium/dist/esm/plugins/storage-indexeddb/indexeddb-find-by-ids.js ***!
+  \***********************************************************************************************/
+
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/rxdb-premium/dist/esm/plugins/storage-indexeddb/indexeddb-index-helpers.js ***!
+  \*************************************************************************************************/
+
+/*!****************************************************************************************************!*\
+  !*** ./node_modules/rxdb-premium/dist/esm/plugins/storage-indexeddb/indexeddb-storage-instance.js ***!
+  \****************************************************************************************************/
+
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/binary-decision-diagram/dist/esm/src/minimal-string/resolve-with-simple-bdd.js ***!
+  \*****************************************************************************************************/
+
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/binary-decision-diagram/dist/esm/src/minimal-string/minimal-string-to-simple-bdd.js ***!
+  \**********************************************************************************************************/

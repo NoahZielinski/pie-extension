@@ -1,0 +1,132 @@
+{
+  "www.youtube.com": {
+    "errors": {
+      "genericError": {
+        "trigger": {
+          "selector": "#player-error-message-container",
+          "parent": "#content #error-screen"
+        },
+        "actions": [{}]
+      },
+      "adblockEnforcementOverlay": {
+        "trigger": {
+          "selector": "ytd-enforcement-message-view-model",
+          "parent": "ytd-app ytd-popup-container"
+        },
+        "actions": [
+          {
+            "shouldRefresh": true
+          },
+          {
+            "delay": 6000,
+            "elementsToClick": ["ytd-enforcement-message-view-model #dismiss-button"],
+            "elementsToRemove": ["ytd-enforcement-message-view-model", "tp-yt-iron-overlay-backdrop"],
+            "shouldAutoplay": true
+          }
+        ]
+      },
+      "adblockEnforcementWall": {
+        "trigger": {
+          "selector": "ytd-enforcement-message-view-model",
+          "parent": "#player"
+        },
+        "actions": [
+          {
+            "shouldRefresh": true
+          }
+        ]
+      },
+      "experiencingInterruptions": {
+        "trigger": {
+          "selector": "tp-yt-paper-toast:not([aria-hidden]):has(a[href*='3037019'], a[href*='check_ad_blocker'])",
+          "parent": "ytd-popup-container"
+        },
+        "actions": [{}]
+      }
+    }
+  },
+  "aternos.org": {
+    "errors": {
+      "adblockEnforcementOverlay": {
+        "trigger": {
+          "selector": "i.fa-sad-tear",
+          "parent": "div[style*='z-index']:has(i.fa-sad-tear)"
+        },
+        "actions": [
+          {
+            "elementsToClick": ["i.fa-sad-tear"]
+          }
+        ]
+      }
+    }
+  },
+  "samfw.com": {
+    "errors": {
+      "genericError": {
+        "trigger": {
+          "selector": ".blockedlink",
+          "parent": "#block-mess"
+        },
+        "actions": [
+          {
+            "showGracefulFail": true,
+            "message": "It looks like this site is blocking adblockers today. We have temporarily disabled Pie Adblock to give you a working YouTube experience. We will automatically re-enable Pie Adblock as soon as this is fixed.",
+            "img": "https://cdn.pie.org/sad-pie.png",
+            "header": "(b)Ad News",
+            "ctaText": "Learn more",
+            "ctaLink": "https://help.pie.org",
+            "messageDelay": 3600000
+          }
+        ]
+      }
+    },
+    "unpauseSettings": {
+      "unpauseAfter": 1725043280,
+      "unpauseVersion": "1.0.1"
+    },
+    "popoverMessage": {
+      "header": "Bad news",
+      "message": "It looks like this site is blocking adblockers today."
+    }
+  },
+  "www.twitch.tv": {
+    "popoverMessage": {
+      "message": "We've seen some Twitch ads sneak through this week (11/6). A fix is on the way, thanks for your patience and for sticking with us!",
+      "header": "A Twitch ad blocking fix is on the way!"
+    },
+    "errors": {
+      "adblockEnforcementOverlay": {
+        "trigger": {
+          "selector": "button[aria-label='Return to stream']",
+          "parent": ".video-player__container"
+        },
+        "actions": [
+          {
+            "elementsToClick": ["button[aria-label='Return to stream']"]
+          }
+        ]
+      },
+      "genericError": {
+        "trigger": {
+          "selector": "[data-a-target='player-overlay-content-gate'] strong.content-overlay-gate__allow-pointers",
+          "parent": ".video-player__default-player"
+        },
+        "actions": [
+          {
+            "showGracefulFail": true,
+            "message": "We've seen some Twitch ads sneak through this week (11/6). A fix is on the way, thanks for your patience and for sticking with us!",
+            "img": "https://cdn.pie.org/sad-pie.png",
+            "header": "A Twitch ad blocking fix is on the way!"
+          }
+        ]
+      }
+    }
+  },
+  "www.facebook.com": {
+    "popoverMessage": {
+      "message": "Our team is working on removing ads from <b>Facebook</b>, but because their anti-adblocking tech is complex, it will take some time. Thank you for your patience!",
+      "header": "Under construction"
+    }
+  },
+  "errorTypes": ["genericError", "adblockEnforcementOverlay", "adblockEnforcementWall", "experiencingInterruptions"]
+}
